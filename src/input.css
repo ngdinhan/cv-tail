@@ -1,0 +1,380 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base{}
+
+@layer utilities{
+    html{
+        @apply overflow-x-hidden scroll-smooth scroll-pt-4;
+    }
+    section {
+        @apply relative py-100 border-t-1 border-solid border-regal-gr-w;
+    }
+    
+    
+
+    /* Same CSS Start */
+    .nda-container{
+        @apply w-full pl-15 pr-15 ml-auto mr-auto;
+    }
+    .content{
+        @apply max-w-1080 mx-auto;
+    }
+    .nda-title{
+        @apply text-3xl font-black m-0 font-Montserrat uppercase mb-100;
+    }
+    /* Same CSS End */
+
+    /* Section Home Start */
+    .nda-main-content{
+        @apply ml-300;
+    }
+    section.nda-home{
+        @apply h-screen min-h-screen border-t-0 p-0;
+    }
+    section.nda-home .nda-home-content{
+        @apply max-w-540 my-0 mx-auto;
+    }
+    section.nda-home .nda-home-content h1{
+        @apply font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase;
+    }
+    section.nda-home .nda-home-content p{
+        @apply font-Lato text-xl leading-30 text-regal-grey-1;
+    }
+    .nda-home-content .nda-btn-ph{
+        @apply mt-48;
+    }
+    .nda-home-content .nda-btn-ph .nda-btn-portfolio{
+        @apply border-3 border-solid bg-regal-purple border-regal-purple py-13 px-24 mr-10 leading-12.6;
+    }
+    .nda-text-portfolio{
+        @apply font-Montserrat font-black uppercase text-regal-white text-sm;
+    }
+    .nda-home-content .nda-btn-ph .nda-btn-hireme{
+        @apply border-3 border-solid border-regal-black py-13 px-24 leading-12.6;
+    }
+    .nda-text-hireme{
+        @apply font-Montserrat font-black uppercase text-sm;
+    }
+    .nda-scroll-down{
+        @apply absolute bottom-40 right-70 w-full max-w-93%;
+    }
+    .nda-mouse{
+        @apply border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer;
+    }
+    .nda-wheel{
+        @apply w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%;
+    }
+    /* Section Home End */
+
+    /* Section Services Start */
+    .nda-icon-square{
+        @apply text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60;
+    }
+    .nda-services-box h4{
+        @apply text-lg font-semibold font-Montserrat mt-30 mb-20;
+    }
+    .nda-services-box p{
+        @apply text-base font-Lato leading-24 text-regal-grey-1;
+    }
+    /* Section Services End */
+
+    /* Section Skills Start */
+    .nda-skills-box .nda-skills-info{
+        @apply mb-17;
+    }
+    .nda-skills-box h4{
+        @apply text-lg font-bold font-Montserrat;
+    }
+    .nda-skills-box span{
+        @apply text-sm text-regal-grey-1 font-Lato;
+    }
+    .nda-skills-box .nda-progress{
+        @apply h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none;
+    }
+    .nda-skills-box .nda-progress-bar-90{
+        @apply w-90% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none;
+    }
+    .nda-skills-box .nda-progress-bar-75{
+        @apply w-75% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none;
+    }
+    .nda-skills-box .nda-progress-bar-85{
+        @apply w-85% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none;
+    }
+    .nda-skills-box .nda-progress-bar-88{
+        @apply w-88% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none;  
+    }
+    /* Section Skills End */
+
+    /* Section Experiences Start */
+    .nda-timeline{
+        @apply relative; 
+    }
+    .nda-timeline .nda-timeline-container{
+        @apply relative pl-50 mb-100 w-full bg-inherit;
+    }
+    .nda-timeline .nda-content{
+        @apply relative; 
+    }
+    .nda-timeline .nda-content span{
+        @apply text-regal-grey-2 text-sm font-Lato;
+    }
+    .nda-timeline .nda-content h4{
+        @apply text-lg font-Montserrat font-bold my-20 mx-0
+    }
+    .nda-timeline .nda-content p{
+        @apply text-regal-grey-1 font-Lato leading-24 text-base;
+    }
+    .nda-timeline span.nda-line{
+        @apply absolute w-px bg-regal-gr-w top-7 bottom-0 left-4;
+    }
+    /* Section Experiences End */
+
+    /* Section Works Start */
+    .nda-portfolio-filter{
+        @apply mb-49;
+    }
+    .nda-list-inline{
+        @apply pl-0 list-none;
+    }
+    .nda-list-inline-item{
+        @apply inline-block;
+    }
+    .nda-portfolio-filter li{
+        @apply text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative;
+    }
+    .nda-portfolio-item{
+        @apply relative overflow-hidden;
+    }
+    .nda-portfolio-item .nda-details{
+        @apply text-regal-white absolute py-0 px-30 bottom-25 w-full z-1;
+    }
+    .nda-portfolio-item .nda-details h4{
+        @apply text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold;
+    }
+    .nda-portfolio-item .nda-details span{
+        @apply text-11 uppercase opacity-0 inline-block; 
+    }
+    .nda-portfolio-item .nda-thumb{
+        @apply overflow-hidden;
+    }
+    .nda-portfolio-item .nda-thumb img{
+        @apply max-w-full h-auto;
+    }
+    .nda-portfolio-item .nda-mask{
+        @apply bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full;
+    }
+    .nda-btn-works{
+        @apply text-center mt-40;
+    }
+    .nda-btn-works .nda-btn-loadmore{
+        @apply border-3 border-solid border-regal-purple bg-regal-purple py-13 px-24 rounded-none;
+    }
+    .fa-spinner{
+        @apply mr-10 hidden text-regal-white;
+    }
+    .nda-btn-works .nda-btn-loadmore span{
+        @apply uppercase font-Montserrat text-sm font-black leading-12.6 text-regal-white;
+    }
+    /* Section Works End */
+
+    /* Section Fun Facts Start */
+    .nda-facts-item {
+        @apply py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none;
+    }
+    .nda-icon-fun{
+        @apply text-regal-purple text-4xl;
+    }
+    .nda-facts-item h3{
+        @apply text-3xl my-8;
+    }
+    .nda-facts-item h3 em{
+        @apply font-Montserrat leading-9 font-bold not-italic;
+    }
+    .nda-facts-item p{
+        @apply text-15 font-Lato text-regal-grey-1 leading-22.5;
+    }
+    /* Section Fun Facts End */
+
+    /* Section Prices Start */
+    .nda-prices-item{
+        @apply border-1 border-solid border-regal-gr-w py-40 px-70;
+    }
+    .nda-prices-item span{
+        @apply text-regal-white font-Montserrat text-sm font-bold inline-block bg-regal-purple py-3 px-10;
+    }
+    .nda-prices-item h3{
+        @apply text-5xl font-black font-Montserrat mt-30 mx-0 my-20;
+    }
+    .nda-prices-item h3 em{
+        @apply not-italic text-xl mr-10 align-super;
+    }
+    .nda-prices-item ul{
+        @apply mb-0;
+    }
+    .nda-prices-item ul li{
+        @apply leading-2.1 text-regal-grey-1 font-Lato;
+    }
+    ul.nda-styled{
+        @apply list-none;
+    }
+    .nda-btn-porthire{
+        @apply mt-30;
+    }
+    .nda-btn-purchase{
+        @apply border-3 border-solid border-regal-purple bg-regal-purple py-13 px-25;
+    }
+    .nda-btn-purchase span{
+        @apply text-regal-white uppercase text-sm font-black font-Montserrat;
+    }
+
+    /* .nda-prices-item-between{
+        @apply border-1 border-solid border-regal-gr-w bg-regal-purple py-40 px-70;
+    }
+    .nda-prices-item-between span{
+        @apply text-regal-purple font-Montserrat text-sm font-bold inline-block bg-regal-white py-3 px-10;
+    }
+    .nda-prices-item-between h3{
+        @apply text-5xl text-regal-white font-black font-Montserrat mt-30 mx-0 my-20;
+    }
+    .nda-prices-item-between h3 em{
+        @apply not-italic text-regal-white text-xl mr-10 align-super;
+    }
+    .nda-btn-porthire-between{
+        @apply mt-30;
+    }
+    .nda-btn-purchase-between{
+        @apply border-3 border-solid border-regal-white bg-regal-purple py-13 px-25;
+    }
+    .nda-btn-purchase-between span{
+        @apply text-regal-white uppercase text-sm font-black font-Montserrat;
+    } */
+    /* Section Prices End */
+
+    /* Section Testimonials Start */
+    .nda-test-items{
+        @apply text-center mx-auto w-700;
+    }
+    .nda-test-items span{
+        @apply text-100 font-Montserrat text-regal-purple leading-1;
+    }
+    .nda-test-items .nda-thumbnail{
+        @apply rounded-50% overflow-hidden h-80 w-80 mx-auto mb-24;
+    }
+    .nda-test-items p{
+        @apply italic font-Lato font-normal text-lg text-regal-grey-1;
+    }
+    .nda-test-items h4{
+        @apply text-lg font-bold font-Montserrat leading-21.6 mt-24;
+    }
+    /* Section Testimonials End */
+
+    /* Section Blogs Start */
+    .nda-blogs-info{
+        @apply flex justify-between;
+    }
+    .nda-blogs-link{
+        @apply text-sm font-Montserrat font-bold text-regal-black no-underline mt-8;
+    }
+    .nda-blogs-item .nda-thumbnail{
+        @apply relative overflow-hidden cursor-pointer;
+    }
+    .nda-blogs-item span{
+        @apply absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase;
+    }
+    .nda-blogs-item .nda-thumbnail img{
+        @apply max-w-full h-auto object-center object-cover;
+    }
+    .nda-blogs-item h4{
+        @apply font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24;
+    }
+    .nda-blogs-item .nda-meta{
+        @apply mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer;
+    }
+    .nda-list-inline-item{
+        @apply inline-block;
+    }
+
+    .nda-blogs-item .nda-meta .nda-icon-names{
+        @apply text-regal-black;
+    }
+    /* Section Blogs End */
+
+    /* Section Client Start */
+    .nda-clients-item{
+        @apply border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none;
+    }
+    .nda-clients-item .nda-inner{
+        @apply absolute text-center w-full left-0;
+    }
+    .nda-clients-item .nda-inner img{
+        @apply inline-block;
+    }
+    /* Section Client End */
+
+    /* Section Contact Start */
+    .nda-contact-item{
+        @apply text-center;
+    }
+    .nda-icon-contact{
+        @apply text-regal-purple text-4xl;
+    }
+    .nda-contact-item h4{
+        @apply text-lg font-bold font-Montserrat leading-18 mt-12 mb-14;
+    }
+    .nda-contact-item p{
+        @apply text-regal-grey-1 font-Lato text-base leading-4 mb-62;
+    }
+    .nda-contact-form .nda-form-group{
+        @apply mb-30;
+    }
+    .nda-contact-form .nda-form-control{
+        @apply block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-regal-white bg-none border-1 border-solid border-regal-gr-w shadow-none;
+    }
+    .nda-btn-contact{
+        @apply border-3 border-solid border-regal-purple bg-regal-purple w-full rounded-none overflow-hidden leading-0.9 py-16 px-24 relative;
+    }
+    .nda-btn-contact span{
+        @apply uppercase font-Montserrat text-regal-white text-sm font-black leading-0.9;
+    }
+    /* Section Contact End */
+    #return-to-top {
+        position: fixed;
+        bottom: 40px;
+        right: 40px;
+        background: #000;
+        background: rgba(0, 0, 0, 0.5);
+        width: 40px;
+        height: 40px;
+        display: block;
+        text-decoration: none;
+        -webkit-border-radius: 0;
+        -moz-border-radius: 0;
+        border-radius: 0;
+        display: none;
+        z-index: 4;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+        cursor: pointer;
+    }
+    #return-to-top i {
+        color: #fff;
+        margin: 0;
+        position: relative;
+        left: 12px;
+        top: 8px;
+        font-size: 16px;
+        -webkit-transform: translateY(0px);
+        -moz-transform: translateY(0px);
+        -ms-transform: translateY(0px);
+        transform: translateY(0px);
+        -webkit-transition: all 0.1s ease-in-out;
+        -moz-transition: all 0.1s ease-in-out;
+        transition: all 0.1s ease-in-out;
+    }
+    #return-to-top:hover{
+        background:#9013FE;
+    }
+}

@@ -1,0 +1,668 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css" integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/lesson8/build/css/style.css">
+</head>
+<body>
+    
+    <!-- mobile header start -->
+    <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 hidden md:block">
+        <div class="nda-container">
+            <div class="inline-flex mr-24">
+                <button class="bg-transparent border-0 cursor-pointer outline-0 h-33 w-33">
+                    <span class="block bg-regal-black h-4 relative w-20 before:content-[''] before:block before:bg-regal-black before:h-4 before:-top-10 before:absolute before:w-30 after:content-[''] after:block after:bg-regal-black after:h-4 after:top-10 after:absolute after:w-10"></span>
+                </button> 
+            </div>
+
+            <div class="max-h-50 max-w-50 inline-block mr-16">
+                <img src="./img/logo.png" alt="" class="rounded-full">
+            </div>
+
+            <h2 class="font-black text-lg font-Montserrat uppercase inline-block">Mugi Dou</h2>
+        </div>
+    </header>
+    <!-- mobile header end -->
+
+    <!-- desktop header start -->
+    <header class="nda-desktop-header py-40 px-60 w-300 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden md:hidden">
+        <div>
+            <img src="./img/logo.png" alt="" class="rounded-full ">
+        </div>
+
+        <h2 class="font-black uppercase text-2xl font-Montserrat mt-22 mb-40">Mugi Dou</h2>
+
+        <nav>
+            <ul class="list-none p-0 mb-0 cursor-pointer">
+                <li class="py-8 px-0 relative list-none"><a href="#home" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Home</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#services" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Services</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#experience" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Experience</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#works" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Works</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#testimonials" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Testimonials</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#blog" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Blog</a></li>
+                <li class="py-8 px-0 relative list-none"><a href="#contact" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Contact</a></li>
+            </ul>
+        </nav>
+
+        <footer class="mt-auto">
+            <button class="mt-32 leading-14"><i class="fas fa-search text-black mr-12.3 text-sm font-black"></i><span class="font-Lato text-regal-grey-1 text-sm">Search...</span></button>
+            <ul class="mt-45 mb-14 list-none pl-0">
+                <li class="inline-block mr-18.6 -ml-1">
+                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                </li>
+                <li class="inline-block mr-18.6 -ml-1">
+                    <a href=""><i class="fab fa-twitter"></i></a>
+                </li>
+                <li class="inline-block mr-18.6 -ml-1">
+                    <a href=""><i class="fab fa-instagram"></i></a>
+                </li>
+                <li class="inline-block mr-18.6 -ml-1">
+                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                </li>
+            </ul>
+            <span class="text-regal-grey-2 font-Lato text-sm">© 2021 Mugi theme.</span>
+        </footer>            
+    </header> 
+    <!-- desktop header end -->    
+    
+    <!-- main layout start -->
+    <main class="nda-main-content">   
+        <!-- Section Home Start -->
+        <section id="home" class="nda-home page-section flex items-center">
+                <div class="nda-home-content">       
+                    <h1 class="nda-home-title">Hello,</h1>
+                        <p class="nda-home-subtitle">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
+                            <div class="nda-btn-ph">
+                                <button class="nda-btn-portfolio"><span class="nda-text-portfolio">portfolio</span></button>
+                                <button class="nda-btn-hireme"><span class="nda-text-hireme">hire me</span></button>
+                            </div>
+                </div>        
+
+                <div class="nda-scroll-down">
+                    <a class="nda-mouse-wrapper">
+                        <span class="nda-mouse">
+                            <span class="nda-wheel"></span>
+                        </span>
+                    </a>
+                </div>                
+        </section>
+        <!-- Section Home End -->
+    
+        <!-- Section Services Start -->
+        <section id="services" class="page-section">
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Services</h2>
+    
+                    <div class="grid grid-cols-3 gap-x-30 gap-y-56">
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-globe-alt"></span>
+                            <h4 class="nda-services-title">Development</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                        
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-bulb"></span>
+                            <h4 class="nda-services-title">UI/UX Design</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+    
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-graph"></span>
+                            <h4 class="nda-services-title">SEO</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+    
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-direction"></span>
+                            <h4 class="nda-services-title">Advertising</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+    
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-pencil"></span>
+                            <h4 class="nda-services-title">Copy Write</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+    
+                        <div class="nda-services-box">
+                            <span class="nda-icon-square icon-earphones"></span>
+                            <h4 class="nda-services-title">Support</h4>
+                            <p class="nda-services-subtitle">There are many variations of passages of Lorem Ipsum available</p>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <!-- Section Services End -->
+    
+        <!-- Section Skills Start -->
+        <section>
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Skills</h2>
+                    <div class="grid grid-cols-2 gap-x-30 gap-y-55">
+                        <div class="nda-skills-box">
+                            <div class="nda-skills-info flex justify-between">
+                                <h4 class="nda-skills-title">Coding</h4>
+                                <span class="nda-skills-number">90%</span>
+                            </div>
+    
+                            <div class="nda-progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
+                                <div class="nda-progress-bar-90" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" per="90"></div>
+                            </div>
+                        </div>
+    
+                        <div class="nda-skills-box">
+                            <div class="nda-skills-info flex justify-between">
+                                <h4 class="nda-skills-title">WordPress</h4>
+                                <span class="nda-skills-number">75%</span>
+                            </div>
+    
+                            <div class="nda-progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
+                                <div class="nda-progress-bar-75" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" per="75"></div>
+                            </div>
+                        </div>
+    
+                        <div class="nda-skills-box">
+                            <div class="nda-skills-info flex justify-between">
+                                <h4 class="nda-skills-title">Sketch</h4>
+                                <span class="nda-skills-number">85%</span>
+                            </div>
+    
+                            <div class="nda-progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
+                                <div class="nda-progress-bar-85" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" per="85"></div>
+                            </div>
+                        </div>
+    
+                        <div class="nda-skills-box">
+                            <div class="nda-skills-info flex justify-between">
+                                <h4 class="nda-skills-title">jQuery</h4>
+                                <span class="nda-skills-number">88%</span>
+                            </div>
+    
+                            <div class="nda-progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
+                                <div class="nda-progress-bar-88" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88" per="88"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Skills End -->
+    
+        <!-- Section Experience Start -->
+        <section id="experience" class="page-section">
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Experience</h2>
+                    <div class="grid grid-cols-2 gap-x-30">
+                        <div class="nda-timeline">
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2019 - Present</span>
+                                    <h4 class="nda-exptitle">Academic Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2017 - 2013</span>
+                                    <h4 class="nda-exptitle">Bachelor's Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2013 - 2009</span>
+                                    <h4 class="nda-exptitle">Honours Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <span class="nda-line"></span>
+                        </div>
+    
+                        <div class="nda-timeline">
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2019 - Present</span>
+                                    <h4 class="nda-exptitle">Academic Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2017 - 2013</span>
+                                    <h4 class="nda-exptitle">Bachelor's Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <div class="nda-timeline-container after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
+                                <div class="nda-content">
+                                    <span class="nda-time">2013 - 2009</span>
+                                    <h4 class="nda-exptitle">Honours Degree</h4>
+                                    <p class="nda-exp-subtitle">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
+                                </div>
+                            </div>
+                            <span class="nda-line"></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section Experience End -->
+    
+        <!-- Section Works Start -->
+        <section id="works" class="page-section">
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Works</h2>
+                    <ul class="nda-portfolio-filter nda-list-inline">
+                        <li class="nda-list-inline-item [&:not(:last-child)]:mr-28.8" data-filter="*">Everything</li>
+                        <li class="nda-list-inline-item [&:not(:last-child)]:mr-28.8" data-filter=".creative">Art</li>
+                        <li class="nda-list-inline-item [&:not(:last-child)]:mr-28.8" data-filter=".art">Branding</li>
+                        <li class="nda-list-inline-item [&:not(:last-child)]:mr-28.8" data-filter=".design">Creative</li>
+                        <li class="nda-list-inline-item [&:not(:last-child)]:mr-28.8" data-filter=".branding">Design</li>
+                    </ul>
+                    <div>
+                        <div class="grid grid-cols-3 gap-30">
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Creative Art</h4>
+                                        <span class="nda-term">Art, Creative</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works1.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Apple USB</h4>
+                                        <span class="nda-term">Creative, Design</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works2.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Work Space</h4>
+                                        <span class="nda-term">Branding</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works3.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Creative Bulb</h4>
+                                        <span class="nda-term">Creative</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works4.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Iphone 8</h4>
+                                        <span class="nda-term">Art, Branding</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works5.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+    
+                            <div class="">
+                                <div class="nda-portfolio-item">
+                                    <div class="nda-details">
+                                        <h4 class="nda-title">Minimal Art</h4>
+                                        <span class="nda-term">Design, Creative</span>
+                                    </div>
+                                    <div class="nda-thumb">
+                                        <img src="img/works6.jpg" alt="Portfolio-title" class="nda-img">
+                                        <!-- <div class="nda-mask"></div> -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nda-btn-works">
+                        <button class="nda-btn-loadmore">
+                            <i class="fas fa-spinner"></i>
+                            <span class="nda-works-span">Load More</span>
+                        </button>
+                    </div>
+                </div>        
+            </div>
+        </section>
+        <!-- Section Works End -->
+    
+        <!-- Section Fun Facts Start -->
+        <section>
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Fun Facts</h2>
+                    <div class="grid grid-cols-4 gap-30">
+                        <div class="nda-facts-item">
+                            <span class="nda-icon-fun icon-layers"></span>
+                            <h3 class="nda-facts-title"><em class="nda-facts-em">2400</em></h3>
+                            <p class="nda-facts-subtitle">Projects Completed</p>
+                        </div>
+    
+                        <div class="nda-facts-item">
+                            <span class="nda-icon-fun icon-cup"></span>
+                            <h3 class="nda-facts-title"><em class="nda-facts-em">1300</em></h3>
+                            <p class="nda-facts-subtitle">Cup of coffee</p>
+                        </div>
+    
+                        <div class="nda-facts-item">
+                            <span class="nda-icon-fun icon-clock"></span>
+                            <h3 class="nda-facts-title"><em class="nda-facts-em">5700</em></h3>
+                            <p class="nda-facts-subtitle">Hours worked</p>
+                        </div>
+    
+                        <div class="nda-facts-item">
+                            <span class="nda-icon-fun icon-trophy"></span>
+                            <h3 class="nda-facts-title"><em class="nda-facts-em">640</em></h3>
+                            <p class="nda-facts-subtitle">Awards won</p>
+                        </div>
+                    </div>
+                </div>        
+            </div>
+        </section>
+        <!-- Section Fun Facts End -->
+    
+        <!-- Section Prices Start -->
+        <section>
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Prices</h2>
+                    <div class="grid grid-cols-3">
+
+                        <div class="nda-prices-item">
+                            <span class="nda-plan">Regular</span>
+                            <h3 class="nda-price"><em class="nda-prices-em">$</em>14</h3>
+                            <ul class="nda-styled">
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
+                            </ul>
+                            <div class="nda-btn-porthire">
+                                <button class="nda-btn-purchase">
+                                    <span class="nda-btn-purchase-span">purchase</span>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="border-1 border-solid border-regal-gr-w bg-regal-purple py-40 px-70">
+                            <span class="text-regal-purple font-Montserrat text-sm font-bold inline-block bg-regal-white py-3 px-10">Premium</span>
+                            <h3 class="text-5xl text-regal-white font-black font-Montserrat mt-30 mx-0 my-20"><em class="not-italic text-regal-white text-xl mr-10 align-super">$</em>29</h3>
+                            <ul class="list-none">
+                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
+                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
+                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
+                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
+                            </ul>
+                            <div class="mt-30">
+                                <button class="border-3 border-solid border-regal-white bg-regal-purple py-13 px-25">
+                                    <span class="text-regal-white uppercase text-sm font-black font-Montserrat">purchase</span>
+                                </button>
+                            </div>
+                        </div>
+    
+                        <div class="nda-prices-item">
+                            <span class="nda-plan">Professional</span>
+                            <h3 class="nda-price"><em class="nda-prices-em">$</em>43</h3>
+                            <ul class="nda-styled">
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
+                                <li class="before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
+                            </ul>
+                            <div class="nda-btn-porthire">
+                                <button class="nda-btn-purchase">
+                                    <span class="nda-btn-purchase-span">purchase</span>
+                                </button>
+                            </div>
+                        </div>
+
+                    </div>  
+                </div>
+            </div>
+        </section>
+        <!-- Section Prices End -->
+    
+        <!-- Section Testimonials Start -->
+        <section id="testimonials">
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Testimonials</h2>
+                    <div class="nda-test-list">
+                        <div class="nda-test-items">
+                            <span class="nda-symbol">“</span>
+                            <div class="nda-thumbnail">
+                                <img src="./img/test.jpg" alt="">
+                            </div>
+                            <p class="nda-test-subtitle">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
+                            <h4 class="nda-test-title">John Doe</h4>
+                        </div>
+    
+                        <div class="nda-test-items">
+                            <span class="nda-symbol">“</span>
+                            <div class="nda-thumbnail">
+                                <img src="./img/test.jpg" alt="">
+                            </div>
+                            <p class="nda-test-subtitle">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
+                            <h4 class="nda-test-title">John Doe</h4>
+                        </div>
+                    </div>
+                </div>        
+            </div>        
+        </section>
+        <!-- Section Testimonials End -->
+    
+        <!-- Section Blogs Start-->
+        <section id="blog">
+            <div class="nda-container">
+                <div class="content">
+                    <div class="nda-blogs-info">
+                        <h2 class="nda-title">Latest posts</h2>
+                        <a href="" class="nda-blogs-link">VIEW ALL »</a>
+                    </div>
+    
+                    <div class="grid grid-cols-3 gap-24">
+                        
+                        <div class="nda-blogs-item">
+                            <div class="nda-thumbnail">
+                                <a href=""><span class="nda-category">Thoughts</span></a>
+                                <img src="./img/blogs1.jpg" alt="" class="nda-blog-img">
+                            </div>
+                            <h4 class="nda-blogs-subtitle">I should be incapable of drawing a single stroke</h4>
+                            <ul class="nda-list-inline nda-meta">
+                                <li class="nda-list-inline-item nda-notes [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">01 february 2019</li>
+                                <li class="nda-list-inline-item nda-icon-names">MUGIADMIN</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="nda-blogs-item">
+                            <div class="nda-thumbnail">
+                                <a href=""><span class="nda-category">Blog</span></a>
+                                <img src="./img/blogs2.jpg" alt="" class="nda-blog-img">
+                            </div>
+                            <h4 class="nda-blogs-subtitle">While the lovely valley teems with vapour around me</h4>
+                            <ul class="nda-list-inline nda-meta">
+                                <li class="nda-list-inline-item nda-notes [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">01 february 2019</li>
+                                <li class="nda-list-inline-item nda-icon-names text-regal-black">MUGIADMIN</li>
+                            </ul>
+                        </div>
+    
+                        <div class="nda-blogs-item">
+                            <div class="nda-thumbnail">
+                                <a href=""><span class="nda-category">Tech</span></a>
+                                <img src="./img/blogs3.jpg" alt="" class="nda-blog-img">
+                            </div>
+                            <h4 class="nda-blogs-subtitle">I hear the buzz of the little world among the stalks</h4>
+                            <ul class="nda-list-inline nda-meta">
+                                <li class="nda-list-inline-item nda-notes [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">31 february 2019</li>
+                                <li class="nda-list-inline-item nda-icon-names text-regal-black">MUGIADMIN</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>       
+            </div>
+        </section>
+        <!-- Section Blogs End-->
+    
+        <!-- Section Client Start -->
+        <section>
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Clients</h2>
+                    <div class="grid grid-cols-4 gap-x-30">
+                        <div class="nda-clients-item">
+                            <div class="nda-inner">
+                                <img src="./img/client1.png" alt="" class="nda-clients-img">
+                            </div>
+                        </div>
+    
+                        <div class="nda-clients-item">
+                            <div class="nda-inner">
+                                <img src="./img/client2.png" alt="" class="nda-clients-img">
+                            </div>
+                        </div>
+    
+                        <div class="nda-clients-item">
+                            <div class="nda-inner">
+                                <img src="./img/client3.png" alt="" class="nda-clients-img">
+                            </div>
+                        </div>
+    
+                        <div class="nda-clients-item">
+                            <div class="nda-inner">
+                                <img src="./img/client4.png" alt="" class="nda-clients-img">
+                            </div>
+                        </div>
+    
+                        <div class="nda-clients-item">
+                            <div class="nda-inner">
+                                <img src="./img/client2.png" alt="" class="nda-clients-img">
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </section>
+        <!-- Section Client End -->
+    
+        <!-- Section Contact Start -->
+        <section id="contact">
+            <div class="nda-container">
+                <div class="content">
+                    <h2 class="nda-title">Contact</h2>
+                    <div class="grid grid-cols-3 gap-24">
+                        <div class="nda-contact-item">
+                            <span class="nda-icon-contact icon-phone"></span>
+                            <h4 class="nda-contact-title">Call us</h4>
+                            <p class="nda-contact-subtitle">+976 9886-4334</p>
+                        </div>
+    
+                        <div class="nda-contact-item">
+                            <span class="nda-icon-contact icon-envelope-open"></span>
+                            <h4 class="nda-contact-title">Email us</h4>
+                            <p class="nda-contact-subtitle">hello@domain.website</p>
+                        </div>
+    
+                        <div class="nda-contact-item">
+                            <span class="nda-icon-contact icon-location-pin"></span>
+                            <h4 class="nda-contact-title">Visit us</h4>
+                            <p class="nda-contact-subtitle">West Palm Beach, 4669 Travis Street</p>
+                        </div>
+                    </div>
+                    <form id="contact-form" class="nda-contact-form" method="post" action="" novalidate="true">
+                        <div class="grid grid-cols-3 gap-24">
+                            <div class="nda-form-group">
+                                <input type="text" class="nda-form-control" name="InputName" id="InputName" placeholder="Your Name" required="required" data-error="Name is required">
+                            </div>
+    
+                            <div class="nda-form-group">
+                                <input type="text" class="nda-form-control" name="InputName" id="InputName" placeholder="Email address" required="required" data-error="Name is required">
+                            </div>
+    
+                            <div class="nda-form-group">
+                                <input type="text" class="nda-form-control" name="InputName" id="InputName" placeholder="Subject" required="required" data-error="Name is required">
+                            </div>
+                        </div>
+    
+                        <div class="grid grid-cols-1">
+                            <div class="nda-form-group">
+                                <textarea name="InputMessage" id="InputMessage" class="nda-form-control" rows="4" placeholder="Message" required="required" data-error="Message is required."></textarea>
+                            </div>
+                        </div>
+                    </form>
+                    <div>
+                        <button type="submit" id="submit" value="submit" class="nda-btn-contact">
+                            <span class="nda-btn-contact-span">Submit Message</span>
+                        </button>
+                    </div>
+                </div>        
+            </div>          
+        </section>
+        <!-- Section Contact End -->
+    </main> 
+    <!-- main layout end -->
+
+       <a href="" id="return-to-top" style="display:block"><i class="fa fa-chevron-up"></i></a>
+    
+        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> 
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+        <script>
+            
+        $('.nda-facts-em').counterUp({
+            delay:10,
+            time:1000,   
+        });
+
+        
+
+         $(window).scroll(function() {
+            if ($(this).scrollTop() >= 350) {        
+                $("#return-to-top").css("display", "block");  
+            } else {
+                $("#return-to-top").css("display", "none");
+            }
+          });
+        </script>
+    
+</body>
+</html>
