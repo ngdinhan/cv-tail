@@ -2073,16 +2073,6 @@ ul.nda-styled {
   content: var(--tw-content);
 }
 
-@media (min-width: 768px) {
-  .md\:block {
-    display: block;
-  }
-
-  .md\:hidden {
-    display: none;
-  }
-}
-
 .\[\&\:not\(\:last-child\)\]\:mr-16:not(:last-child) {
   margin-right: 16px;
 }
