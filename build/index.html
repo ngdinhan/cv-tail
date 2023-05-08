@@ -33,38 +33,38 @@
     <!-- mobile header end -->
 
     <!-- desktop header start -->
-    <header class="py-40 px-60 w-300 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden">
+    <header class="desktop-header py-40 px-60 w-300 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden">
         <div>
             <img src="./img/logo.png" alt="" class="rounded-full ">
         </div>
 
-        <h2 class="font-black uppercase text-2xl font-Montserrat mt-22 mb-40">Mugi Dou</h2>
+        <h2 class="site-title font-black uppercase text-2xl font-Montserrat mt-22 mb-40">Mugi Dou</h2>
 
         <nav>
-            <ul class="list-none p-0 mb-0 cursor-pointer">
-                <li class="py-8 px-0 relative list-none"><a href="#home" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Home</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#services" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Services</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#experience" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Experience</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#works" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Works</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#testimonials" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Testimonials</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#blog" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Blog</a></li>
-                <li class="py-8 px-0 relative list-none"><a href="#contact" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Contact</a></li>
+            <ul class="vertical-menu list-none p-0 mb-0 cursor-pointer">
+                <li class="home active py-8 px-0 relative list-none"><a class="scroll-home" href="#home" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Home</a></li>
+                <li class="services py-8 px-0 relative list-none"><a class="scroll-services" href="#services" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Services</a></li>
+                <li class="experience py-8 px-0 relative list-none"><a class="scroll-experience" href="#experience" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Experience</a></li>
+                <li class="works py-8 px-0 relative list-none"><a class="scroll-works" href="#works" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Works</a></li>
+                <li class="testimonials py-8 px-0 relative list-none"><a class="scroll-testimonials" href="#testimonials" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Testimonials</a></li>
+                <li class="blog py-8 px-0 relative list-none"><a class="scroll-blog" href="#blog" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Blog</a></li>
+                <li class="contact py-8 px-0 relative list-none"><a class="scroll-contact" href="#contact" class="text-black font-Montserrat text-sm font-bold uppercase no-underline relative">Contact</a></li>
             </ul>
         </nav>
 
         <footer class="mt-auto">
             <button class="mt-32 leading-14"><i class="fas fa-search text-black mr-12.3 text-sm font-black"></i><span class="font-Lato text-regal-grey-1 text-sm">Search...</span></button>
-            <ul class="mt-45 mb-14 list-none pl-0">
-                <li class="inline-block mr-18.6 -ml-1">
+            <ul class="social-items list-inline mt-45 mb-14 list-none pl-0">
+                <li class="list-inline-item inline-block mr-18.6 -ml-1">
                     <a href=""><i class="fab fa-facebook-f"></i></a>
                 </li>
-                <li class="inline-block mr-18.6 -ml-1">
+                <li class="list-inline-item inline-block mr-18.6 -ml-1">
                     <a href=""><i class="fab fa-twitter"></i></a>
                 </li>
-                <li class="inline-block mr-18.6 -ml-1">
+                <li class="list-inline-item inline-block mr-18.6 -ml-1">
                     <a href=""><i class="fab fa-instagram"></i></a>
                 </li>
-                <li class="inline-block mr-18.6 -ml-1">
+                <li class="list-inline-item inline-block mr-18.6 -ml-1">
                     <a href=""><i class="fab fa-linkedin-in"></i></a>
                 </li>
             </ul>
@@ -76,20 +76,20 @@
     <!-- main layout start -->
     <main class="ml-300">   
         <!-- Section Home Start -->
-        <section id="home" class="h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
+        <section id="home" class="home page-section h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
                 <div class="max-w-540 my-0 mx-auto">       
                     <h1 class="font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
                         <p class="font-Lato text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
-                            <div class="mt-48">
-                                <button class="border-3 border-solid bg-regal-purple border-regal-purple py-13 px-24 mr-10 leading-12.6"><span class="font-Montserrat font-black uppercase text-regal-white text-sm">portfolio</span></button>
-                                <button class="border-3 border-solid border-regal-black py-13 px-24 leading-12.6"><span class="font-Montserrat font-black uppercase text-sm">hire me</span></button>
+                            <div class="btn-port-hire mt-48">
+                                <button class="btn btn-item btn-portfolio border-3 border-solid bg-regal-purple border-regal-purple py-13 px-24 mr-10 leading-12.6"><span class="font-Montserrat font-black uppercase text-regal-white text-sm">portfolio</span></button>
+                                <button class="btn btn-item btn-hireme border-3 border-solid border-regal-black py-13 px-24 leading-12.6"><span class="font-Montserrat font-black uppercase text-sm">hire me</span></button>
                             </div>
                 </div>        
 
-                <div class="absolute bottom-40 right-70 w-full max-w-93%">
-                    <a class="nda-mouse-wrapper">
-                        <span class="border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
-                            <span class="w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
+                <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93%">
+                    <a class="mouse-wrapper">
+                        <span class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
+                            <span class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
                         </span>
                     </a>
                 </div>                
@@ -145,7 +145,7 @@
         <!-- Section Services End -->
     
         <!-- Section Skills Start -->
-        <section>
+        <section id="skills">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Skills</h2>
@@ -365,7 +365,7 @@
         <!-- Section Works End -->
     
         <!-- Section Fun Facts Start -->
-        <section>
+        <section id="facts">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Fun Facts</h2>
@@ -400,7 +400,7 @@
         <!-- Section Fun Facts End -->
     
         <!-- Section Prices Start -->
-        <section>
+        <section id="prices">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Prices</h2>
@@ -461,7 +461,7 @@
         <!-- Section Prices End -->
     
         <!-- Section Testimonials Start -->
-        <section id="testimonials">
+        <section id="testimonials" class="page-section">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Testimonials</h2>
@@ -490,7 +490,7 @@
         <!-- Section Testimonials End -->
     
         <!-- Section Blogs Start-->
-        <section id="blog">
+        <section id="blog" class="page-section">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <div class="flex justify-between">
@@ -542,7 +542,7 @@
         <!-- Section Blogs End-->
     
         <!-- Section Client Start -->
-        <section>
+        <section id="clients">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Clients</h2>
@@ -583,7 +583,7 @@
         <!-- Section Client End -->
     
         <!-- Section Contact Start -->
-        <section id="contact">
+        <section id="contact" class="page-section">
             <div class="nda-container">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Contact</h2>
@@ -645,7 +645,8 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    
+        <script src="js/main.js"></script>
+        <script src="js/scroll.js"></script>
         <script>
             
         $('#nda-facts-em').counterUp({
