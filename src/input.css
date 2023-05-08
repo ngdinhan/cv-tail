@@ -35,6 +35,7 @@
         color:#9013fe;
         transition: 0.3s;
         cursor: pointer;
+        font-family: 'Montserrat', sans-serif;
     }
     header.desktop-header .vertical-menu {
         list-style: none;
