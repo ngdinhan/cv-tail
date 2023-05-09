@@ -22,6 +22,7 @@
         
     }
     
+
     /* menu desktop header start */
     /* header.desktop-header .site-title {
         font-size: 24px;
@@ -33,14 +34,8 @@
         color:#9013fe;
         transition: 0.3s;
         cursor: pointer;
-<<<<<<< HEAD
     } */
     /* header.desktop-header .vertical-menu {
-=======
-        font-family: 'Montserrat', sans-serif;
-    }
-    header.desktop-header .vertical-menu {
->>>>>>> 1d4d2a61fe7a43e04c655893aa8bb8f4460bfdc7
         list-style: none;
         padding: 0;
         margin-bottom: 0;
@@ -121,6 +116,7 @@
     }
     /* menu desktop header end */
     
+
     /* section home start */
     /* .mouse {
         border: solid 3px #000;
@@ -162,17 +158,9 @@
     }
     /* section home end */
 
+
     /* section skills start */
     .skills-item .progress-bar {
-        /* float: left;
-        width: 0;
-        height: 100%;
-        font-size: 12px;
-        line-height: 5px;
-        color: #fff;
-        text-align: center;
-        background-color: #9013FE;
-        box-shadow: none; */
         -webkit-box-shadow: none;
         -webkit-transition: width .6s ease;
         -o-transition: width .6s ease;
@@ -230,36 +218,13 @@
     } 
     /* section skills end */
 
+
     /* section works start */
-    /* .portfolio-filter li {
-        color: #777;
-        cursor: pointer;
-        font-family: "Montserrat", sans-serif;
-        font-size: 13px;
-        font-weight: 700;
-        text-transform: uppercase;
-        position: relative;
-    } */
     .portfolio-filter li:after {
-        content: '';
-        background: #9013FE;
-        width: 100%;
-        height: 0;
-        left: 0;
-        opacity: .5;
-        bottom: 1px;
-        position: absolute;
-        z-index: -1;
         -webkit-transition: all 0.3s ease-in-out;
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
-    /* .portfolio-filter li:hover {
-        color: #000;
-    } */
-    /* .portfolio-filter li:hover:after {
-        height: 7px;
-    } */
     .portfolio-filter li.current {
         color: #000;
     }
@@ -274,10 +239,42 @@
         position: absolute;
         z-index: -1;
     }
-    /* .portfolio-filter li:not(:last-child) {
-        margin-right: 1.8rem;
-    } */
+    .portfolio-item .details h4{
+        transform: translateY(30px);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    }
+    .portfolio-item:hover .details h4, .portfolio-item:hover .details span{
+        opacity: 1;
+        transform: translateY(0);
+    }
+    .portfolio-item .details span{
+        transform: translateY(40px);
+        transition: all cubic-bezier(0.075, 0.82, 0.165, 1) 1s;
+    }
+   
+    .portfolio-item .details span:last-child::after {
+        content: "";
+        margin-right: 0;
+    }
+   
+    .portfolio-item .mask {
+        -webkit-transform: translateY(110%);
+        -ms-transform: translateY(110%);
+        transform: translateY(110%);
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .portfolio-item:hover .mask {
+        -webkit-transform: translateY(0);
+        -ms-transform: translateY(0);
+        transform: translateY(0);
+        cursor: pointer;
+    }
     /* section works end */
+
+
+
 
     #return-to-top {
         position: fixed;
