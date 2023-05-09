@@ -1,6 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ["./build/**/*.{html,js}"],
+  content: ["./*.{html,js}"],
   theme: {
     extend: {
       colors:{
@@ -31,6 +31,7 @@ module.exports = {
       inset: {
         '-10': '-10px',
         '40%': '40%',
+        '50%': '50%',
         '4': '4px',
         '7': '7px',
         '8': '8px',
@@ -125,6 +126,7 @@ module.exports = {
         '4': '4px',
         '5': '5px',
         '6': '6px',
+        '7': '7px',
         '9': '9px',
         '33': '33px',
         '34': '34px',

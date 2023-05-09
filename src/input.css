@@ -15,43 +15,37 @@
         max-width: 1920px;
     }
     section {
-        /* @apply relative py-100 border-t-1 border-solid border-regal-gr-w w-full h-full; */
         border-top: solid 1px #ececec;
         padding-top: 100px;
         padding-bottom: 100px;
         position: relative;
-        height: 100%;
-        width: 100%;
+        
     }
     
     /* menu desktop header start */
-    header.desktop-header .site-title {
+    /* header.desktop-header .site-title {
         font-size: 24px;
         font-weight: 900;
         text-transform: uppercase;
         font-family: 'Montserrat', sans-serif;
-    }
-    header.desktop-header .site-title:hover{
+    } */
+    /* header.desktop-header .site-title:hover{
         color:#9013fe;
         transition: 0.3s;
         cursor: pointer;
-    }
-    header.desktop-header .vertical-menu {
+    } */
+    /* header.desktop-header .vertical-menu {
         list-style: none;
         padding: 0;
         margin-bottom: 0;
         cursor: pointer;
-    }
+    } */
     header.desktop-header .vertical-menu li {
-        padding: 8px 0;
-        position: relative;
-        list-style: none;
-        display: table;
         -webkit-transition: all 0.2s ease-in-out;
         -moz-transition: all 0.2s ease-in-out;
         transition: all 0.2s ease-in-out;
     }
-    header.desktop-header .vertical-menu li a {
+    /* header.desktop-header .vertical-menu li a {
         color: #000;
         font-family: 'Montserrat', sans-serif;
         font-size: 14px;
@@ -60,7 +54,7 @@
         text-transform: uppercase;
         text-decoration: none;
         position: relative;
-    }
+    } */
     
     nav .vertical-menu li.active::after {
         content: "";
@@ -101,27 +95,28 @@
         -moz-transition: all 0.3s ease-in-out;
         transition: all 0.3s ease-in-out;
     }
-    header.desktop-header .vertical-menu li a:hover:after {
+    /* header.desktop-header .vertical-menu li a:hover:after {
         height: 7px;
-    }
-    header.desktop-header .social-items{
+    } */
+    /* header.desktop-header .social-items{
         margin-top: 40px;
         margin-bottom: 14px;
-    }
-    header.desktop-header .social-items li{
+    } */
+    /* header.desktop-header .social-items li{
         margin-right: 18.6px;
         margin-left: -1px;
-    }
-    .list-inline-item a{
+    } */
+    /* .list-inline-item a{
         color: #000;
-    }
+    } */
     .social-items>li:hover a{
         color: #9013FE;
         transition: 0.3s;
     }
-
+    /* menu desktop header end */
     
-    .mouse {
+    /* section home start */
+    /* .mouse {
         border: solid 3px #000;
         border-radius: 16px;
         display: block;
@@ -130,17 +125,17 @@
         position: relative;
         width: 25px;
         cursor: pointer;
-    }
+    } */
     .mouse .wheel {
-        background: #000;
+        /* background: #000;
         border-radius: 100%;
         display: block;
         position: absolute;
         top: 8px;
-        left: 50%;
+        left: 40%;
         transform: translateX(-50%);
         height: 5px;
-        width: 5px;
+        width: 5px; */
         -webkit-animation: ani-mouse 3s linear infinite;
         -moz-animation: ani-mouse 3s linear infinite;
         animation: ani-mouse 3s linear infinite;
@@ -159,8 +154,79 @@
             top: 29%;
         }  
     }
-    /* menu desktop header end */
+    /* section home end */
 
+    /* section skills start */
+    .skills-item .progress-bar {
+        /* float: left;
+        width: 0;
+        height: 100%;
+        font-size: 12px;
+        line-height: 5px;
+        color: #fff;
+        text-align: center;
+        background-color: #9013FE;
+        box-shadow: none; */
+        -webkit-box-shadow: none;
+        -webkit-transition: width .6s ease;
+        -o-transition: width .6s ease;
+        transition: width .6s ease;
+    }
+    .skills-item .coding.progress-bar{
+        width: 90%;
+        animation: coding 1.2s ease-in-out;
+    }
+    .skills-item .wordpress.progress-bar{
+        width: 75%;
+        animation: wordpress 1.2s ease-in-out;
+    }
+    .skills-item .sketch.progress-bar{
+        width: 85%;
+        animation: sketch 1.2s ease-in-out;
+    }
+    .skills-item .jQuery.progress-bar{
+        width: 88%;
+        animation: jQuery 1.2s ease-in-out;
+    }
+    @keyframes coding{ 
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 90%;
+        }
+    } 
+    @keyframes wordpress{ 
+        0%{
+            width: 0%;
+        }
+    
+        100%{
+            width: 75%;
+        }
+    } 
+    @keyframes sketch{ 
+        0%{
+            width: 0%;
+        }
+        100%{
+            width: 85%;
+        }
+    } 
+    @keyframes jQuery{ 
+        0%{
+            width: 0%;
+        }
+    
+        100%{
+            width: 88%;
+        }
+    } 
+    /* section skills end */
+
+    /* section works start */
+    
+    /* section works end */
 
     #return-to-top {
         position: fixed;
