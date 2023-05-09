@@ -550,6 +550,10 @@ video {
   left: 0px;
 }
 
+.left-12 {
+  left: 12px;
+}
+
 .left-4 {
   left: 4px;
 }
@@ -564,6 +568,10 @@ video {
 
 .right-20 {
   right: 20px;
+}
+
+.right-40 {
+  right: 40px;
 }
 
 .right-70 {
@@ -588,6 +596,10 @@ video {
 
 .z-1 {
   z-index: 1;
+}
+
+.z-4 {
+  z-index: 4;
 }
 
 .float-left {
@@ -803,6 +815,10 @@ video {
   height: 4px;
 }
 
+.h-40 {
+  height: 40px;
+}
+
 .h-5 {
   height: 5px;
 }
@@ -853,6 +869,10 @@ video {
 
 .w-33 {
   width: 33px;
+}
+
+.w-40 {
+  width: 40px;
 }
 
 .w-5 {
@@ -1069,6 +1089,11 @@ video {
 .bg-regal-gr-w1 {
   --tw-bg-opacity: 1;
   background-color: rgb(233 233 233 / var(--tw-bg-opacity));
+}
+
+.bg-regal-grey-1 {
+  --tw-bg-opacity: 1;
+  background-color: rgb(136 136 136 / var(--tw-bg-opacity));
 }
 
 .bg-regal-purple {
@@ -1479,42 +1504,15 @@ section {
 
 /* menu desktop header start */
 
-/* header.desktop-header .site-title {
-        font-size: 24px;
-        font-weight: 900;
-        text-transform: uppercase;
-        font-family: 'Montserrat', sans-serif;
-    } */
-
-/* header.desktop-header .site-title:hover{
-        color:#9013fe;
-        transition: 0.3s;
-        cursor: pointer;
-    } */
-
-/* header.desktop-header .vertical-menu {
-        list-style: none;
-        padding: 0;
-        margin-bottom: 0;
-        cursor: pointer;
-    } */
+header.desktop-header .site-title:hover{
+  transition:all 0.3s ease-in-out;
+}
 
 header.desktop-header .vertical-menu li {
   transition: all 0.2s ease-in-out;
 }
 
-/* header.desktop-header .vertical-menu li a {
-        color: #000;
-        font-family: 'Montserrat', sans-serif;
-        font-size: 14px;
-        font-weight: 700;
-        width: 100%;
-        text-transform: uppercase;
-        text-decoration: none;
-        position: relative;
-    } */
-
-nav .vertical-menu li.active::after {
+nav .vertical-menu li.active:after {
   content: "";
   background: #9013FE;
   width: 100%;
@@ -1526,7 +1524,7 @@ nav .vertical-menu li.active::after {
   z-index: -1;
 }
 
-nav .vertical-menu li::after {
+nav .vertical-menu li:after {
   content: "";
   background: #9013FE;
   width: 100%;
@@ -1540,38 +1538,10 @@ nav .vertical-menu li::after {
 }
 
 header.desktop-header .vertical-menu li a:after {
-  content: '';
-  background: #9013FE;
-  width: 100%;
-  height: 0;
-  left: 1px;
-  opacity: .5;
-  bottom: 0;
-  position: absolute;
-  z-index: -1;
   transition: all 0.3s ease-in-out;
 }
 
-/* header.desktop-header .vertical-menu li a:hover:after {
-        height: 7px;
-    } */
-
-/* header.desktop-header .social-items{
-        margin-top: 40px;
-        margin-bottom: 14px;
-    } */
-
-/* header.desktop-header .social-items li{
-        margin-right: 18.6px;
-        margin-left: -1px;
-    } */
-
-/* .list-inline-item a{
-        color: #000;
-    } */
-
 .social-items>li:hover a{
-  color: #9013FE;
   transition:all 0.3s ease-in-out;
 }
 
@@ -1579,27 +1549,7 @@ header.desktop-header .vertical-menu li a:after {
 
 /* section home start */
 
-/* .mouse {
-        border: solid 3px #000;
-        border-radius: 16px;
-        display: block;
-        margin: auto;
-        height: 34px;
-        position: relative;
-        width: 25px;
-        cursor: pointer;
-    } */
-
 .mouse .wheel {
-  /* background: #000;
-        border-radius: 100%;
-        display: block;
-        position: absolute;
-        top: 8px;
-        left: 40%;
-        transform: translateX(-50%);
-        height: 5px;
-        width: 5px; */
   animation: ani-mouse 3s linear infinite;
 }
 
@@ -1708,7 +1658,7 @@ header.desktop-header .vertical-menu li a:after {
   width: 100%;
   height: 7px;
   left: 0;
-  opacity: .5;
+  opacity: 0.5;
   bottom: 1px;
   position: absolute;
   z-index: -1;
@@ -1748,51 +1698,132 @@ header.desktop-header .vertical-menu li a:after {
 
 /* section blog start */
 
-.blogs-item .thumbnail img{
-  transition:all 0.3s ease-in-out;
-}
-
-.blogs-item h4:hover{
-  transition:all 0.3s ease-in-out;
-}
-
-.blogs-item .meta .icon-names:hover{
+.blogs-item .thumbnail img, .blogs-item h4:hover, .blogs-item .meta .icon-names:hover{
   transition:all 0.3s ease-in-out;
 }
 
 /* section blog end */
 
+/* return to top start */
+
 #return-to-top {
-  position: fixed;
-  bottom: 40px;
-  right: 40px;
-  background: #000;
-  background: rgba(0, 0, 0, 0.5);
-  width: 40px;
-  height: 40px;
-  display: block;
-  text-decoration: none;
-  border-radius: 0;
-  display: none;
-  z-index: 4;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
   transition: all 0.3s ease-in-out;
-  cursor: pointer;
 }
 
 #return-to-top i {
-  color: #fff;
-  margin: 0;
-  position: relative;
-  left: 12px;
-  top: 8px;
-  font-size: 16px;
   transform: translateY(0px);
+  -webkit-transform: translateY(0px);
+  -moz-transform: translateY(0px);
+  -ms-transform: translateY(0px);
   transition: all 0.1s ease-in-out;
 }
 
-#return-to-top:hover{
-  background:#9013FE;
+/* return to top end */
+
+/* button start */
+
+.btn-animation {
+  display: inline-block;
+  vertical-align: middle;
+  box-shadow: 0 0 1px transparent;
+  position: relative;
+  transform: perspective(1px) translateZ(0);
+  transition-property: color;
+  transition-duration: 0.3s;
 }
+
+.btn-animation:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  transform: scaleY(0);
+  transform-origin: 50% 100%;
+  transition-property: transform;
+  transition-duration: 0.3s;
+  transition-timing-function: ease-out;
+}
+
+.btn-animation:hover:before, .btn-animation:focus:before, .btn-animation:active:before {
+  transform: scaleY(1);
+}
+
+.btn {
+  border-radius: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 14px;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 1;
+  padding: 15px 24px;
+  position: relative;
+  text-transform: uppercase;
+}
+
+.btn:focus {
+  box-shadow: none;
+  outline: 0;
+}
+
+.btn-default {
+  color: #FFF;
+  border: solid 3px #9013FE;
+  background: #9013FE;
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+}
+
+.btn-default:hover, .btn-default:focus {
+  color: #9013FE;
+  border-color: #9013FE;
+}
+
+.btn-default:before {
+  background: #FFF;
+}
+
+.btn-alt {
+  color: #000;
+  background: transparent;
+  border: solid 3px #000;
+}
+
+.btn-alt:hover, .btn-alt:focus {
+  color: #FFF;
+  border-color: #000;
+}
+
+.btn-alt:before {
+  background: #000;
+}
+
+.btn-alt-light {
+  color: #FFF;
+  background: transparent;
+  border: solid 3px #FFF;
+}
+
+.btn-alt-light:hover, .btn-alt-light:focus {
+  color: #9013FE;
+  border-color: #FFF;
+}
+
+.btn-alt-light:before {
+  background: #FFF;
+}
+
+.btn-full {
+  text-align: center;
+  width: 100%;
+}
+
+/* button end */
 
 .before\:absolute::before {
   content: var(--tw-content);
@@ -1872,6 +1903,11 @@ header.desktop-header .vertical-menu li a:after {
   position: absolute;
 }
 
+.after\:bottom-0::after {
+  content: var(--tw-content);
+  bottom: 0px;
+}
+
 .after\:bottom-px::after {
   content: var(--tw-content);
   bottom: 1px;
@@ -1880,6 +1916,11 @@ header.desktop-header .vertical-menu li a:after {
 .after\:left-0::after {
   content: var(--tw-content);
   left: 0px;
+}
+
+.after\:left-px::after {
+  content: var(--tw-content);
+  left: 1px;
 }
 
 .after\:top-10::after {
@@ -1990,6 +2031,15 @@ header.desktop-header .vertical-menu li a:after {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+.hover\:cursor-pointer:hover {
+  cursor: pointer;
+}
+
+.hover\:bg-regal-purple:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(144 19 254 / var(--tw-bg-opacity));
+}
+
 .hover\:text-regal-black:hover {
   --tw-text-opacity: 1;
   color: rgb(0 0 0 / var(--tw-text-opacity));
@@ -1998,12 +2048,6 @@ header.desktop-header .vertical-menu li a:after {
 .hover\:text-regal-purple:hover {
   --tw-text-opacity: 1;
   color: rgb(144 19 254 / var(--tw-text-opacity));
-}
-
-.hover\:transition-all:hover {
-  transition-property: all;
-  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-  transition-duration: 150ms;
 }
 
 .hover\:after\:h-7:hover::after {
