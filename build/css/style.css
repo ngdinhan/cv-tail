@@ -1572,7 +1572,7 @@ header.desktop-header .vertical-menu li a:after {
 
 .social-items>li:hover a{
   color: #9013FE;
-  transition: 0.3s;
+  transition:all 0.3s ease-in-out;
 }
 
 /* menu desktop header end */
@@ -1745,6 +1745,22 @@ header.desktop-header .vertical-menu li a:after {
 }
 
 /* section works end */
+
+/* section blog start */
+
+.blogs-item .thumbnail img{
+  transition:all 0.3s ease-in-out;
+}
+
+.blogs-item h4:hover{
+  transition:all 0.3s ease-in-out;
+}
+
+.blogs-item .meta .icon-names:hover{
+  transition:all 0.3s ease-in-out;
+}
+
+/* section blog end */
 
 #return-to-top {
   position: fixed;
@@ -1966,6 +1982,12 @@ header.desktop-header .vertical-menu li a:after {
 .after\:content-\[\'\'\]::after {
   --tw-content: '';
   content: var(--tw-content);
+}
+
+.hover\:scale-110:hover {
+  --tw-scale-x: 1.1;
+  --tw-scale-y: 1.1;
+  transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
 .hover\:text-regal-black:hover {

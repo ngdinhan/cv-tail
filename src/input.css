@@ -23,6 +23,7 @@
     }
     
 
+
     /* menu desktop header start */
     /* header.desktop-header .site-title {
         font-size: 24px;
@@ -112,10 +113,11 @@
     } */
     .social-items>li:hover a{
         color: #9013FE;
-        transition: 0.3s;
+        transition:all 0.3s ease-in-out;
     }
     /* menu desktop header end */
     
+
 
     /* section home start */
     /* .mouse {
@@ -157,6 +159,7 @@
         }  
     }
     /* section home end */
+
 
 
     /* section skills start */
@@ -219,6 +222,7 @@
     /* section skills end */
 
 
+
     /* section works start */
     .portfolio-filter li:after {
         -webkit-transition: all 0.3s ease-in-out;
@@ -273,6 +277,19 @@
     }
     /* section works end */
 
+
+
+    /* section blog start */
+    .blogs-item .thumbnail img{
+        transition:all 0.3s ease-in-out;
+    }
+    .blogs-item h4:hover{
+        transition:all 0.3s ease-in-out;
+    }
+    .blogs-item .meta .icon-names:hover{
+        transition:all 0.3s ease-in-out;
+    }
+    /* section blog end */
 
 
 
