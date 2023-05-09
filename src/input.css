@@ -33,8 +33,14 @@
         color:#9013fe;
         transition: 0.3s;
         cursor: pointer;
+<<<<<<< HEAD
     } */
     /* header.desktop-header .vertical-menu {
+=======
+        font-family: 'Montserrat', sans-serif;
+    }
+    header.desktop-header .vertical-menu {
+>>>>>>> 1d4d2a61fe7a43e04c655893aa8bb8f4460bfdc7
         list-style: none;
         padding: 0;
         margin-bottom: 0;
