@@ -231,7 +231,52 @@
     /* section skills end */
 
     /* section works start */
-    
+    /* .portfolio-filter li {
+        color: #777;
+        cursor: pointer;
+        font-family: "Montserrat", sans-serif;
+        font-size: 13px;
+        font-weight: 700;
+        text-transform: uppercase;
+        position: relative;
+    } */
+    .portfolio-filter li:after {
+        content: '';
+        background: #9013FE;
+        width: 100%;
+        height: 0;
+        left: 0;
+        opacity: .5;
+        bottom: 1px;
+        position: absolute;
+        z-index: -1;
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    /* .portfolio-filter li:hover {
+        color: #000;
+    } */
+    /* .portfolio-filter li:hover:after {
+        height: 7px;
+    } */
+    .portfolio-filter li.current {
+        color: #000;
+    }
+    .portfolio-filter li.current:after {
+        content: '';
+        background: #9013FE;
+        width: 100%;
+        height: 7px;
+        left: 0;
+        opacity: .5;
+        bottom: 1px;
+        position: absolute;
+        z-index: -1;
+    }
+    /* .portfolio-filter li:not(:last-child) {
+        margin-right: 1.8rem;
+    } */
     /* section works end */
 
     #return-to-top {
