@@ -22,6 +22,7 @@ module.exports = {
       fontSize:{
         '11':'11px',
         '13':'13px',
+        '14':'14px',
         '15':'15px',
         '100': '100px',
       },
@@ -177,6 +178,15 @@ module.exports = {
       letterSpacing:{
         '0.77':'0.77px',
       },
+      transformOrigin: {
+        '50-100': '50% 100%',
+      },
+      transitionDuration: {
+        '0.3': '0.3s',
+      },
+      boxShadow: {
+        '001t': '0 0 1px transparent',
+      }
     },
   },
   plugins: [],
