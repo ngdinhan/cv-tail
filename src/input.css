@@ -3,6 +3,9 @@
 @tailwind utilities;
 
 @layer utilities{
+    .nda-container{
+        @apply
+    }
     html{
         overflow-x: hidden;
         scroll-behavior: auto;

@@ -719,8 +719,8 @@ video {
   margin-right: 18.6px;
 }
 
-.mr-24 {
-  margin-right: 24px;
+.mr-25 {
+  margin-right: 25px;
 }
 
 .mr-auto {
@@ -1036,12 +1036,12 @@ video {
   border-width: 1px;
 }
 
-.border-3 {
-  border-width: 3px;
-}
-
 .border-2 {
   border-width: 2px;
+}
+
+.border-3 {
+  border-width: 3px;
 }
 
 .border-r-1 {
@@ -1050,10 +1050,6 @@ video {
 
 .border-t-0 {
   border-top-width: 0px;
-}
-
-.border-s {
-  border-inline-start-width: 1px;
 }
 
 .border-solid {
@@ -1488,6 +1484,9 @@ video {
 
 .outline-0 {
   outline-width: 0px;
+}
+
+.nda-container{
 }
 
 html{

@@ -17,17 +17,19 @@
     <!-- mobile header start -->
     <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 hidden">
         <div class="w-full pl-15 pr-15 ml-auto mr-auto">
-            <div class="inline-flex mr-24">
-                <button class="bg-transparent border-0 cursor-pointer outline-0 h-33 w-33">
-                    <span class="block bg-regal-black h-4 relative w-20 before:content-[''] before:block before:bg-regal-black before:h-4 before:-top-10 before:absolute before:w-30 after:content-[''] after:block after:bg-regal-black after:h-4 after:top-10 after:absolute after:w-10"></span>
-                </button> 
+            <div class="mobile-item flex items-center">
+                <div class="menu-icon inline-flex mr-25">
+                    <button class="bg-transparent border-0 cursor-pointer outline-0 p-0 h-33 w-33">
+                        <span class="block bg-regal-black h-4 relative w-20 before:content-[''] before:block before:bg-regal-black before:h-4 before:-top-10 before:absolute before:w-30 after:content-[''] after:block after:bg-regal-black after:h-4 after:top-10 after:absolute after:w-10"></span>
+                    </button> 
+                </div>
+    
+                <div class="site-logo">
+                    <img src="./build/img/logo.png" alt="" class="rounded-full mr-16 max-h-50 max-w-50 inline-block">
+                </div>
+    
+                <h2 class="font-black text-lg font-Montserrat uppercase inline-block">Mugi Dou</h2>
             </div>
-
-            <div class="max-h-50 max-w-50 inline-block mr-16">
-                <img src="./build/img/logo.png" alt="" class="rounded-full">
-            </div>
-
-            <h2 class="font-black text-lg font-Montserrat uppercase inline-block">Mugi Dou</h2>
         </div>
     </header>
     <!-- mobile header end -->
@@ -76,23 +78,25 @@
     <!-- main layout start -->
     <main class="ml-300">   
         <!-- Section Home Start -->
-        <section id="home" class="home page-section h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
-                <div class="max-w-540 my-0 mx-auto">       
-                    <h1 class="font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
-                        <p class="font-Lato text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
-                            <div class="mt-48">
-                                <button class="btn btn-default btn-animation border-3 border-solid bg-regal-purple border-regal-purple py-13 px-24 mr-10 leading-12.6">portfolio</button>
-                                <button class="btn btn-alt btn-animation border-3 border-solid border-regal-black py-13 px-24 leading-12.6">hire me</button>
-                            </div>
-                </div>        
-
-                <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93%">
-                    <a class="mouse-wrapper">
-                        <span class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
-                            <span class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
-                        </span>
-                    </a>
-                </div>                
+        <section id="home" class="home h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
+                <!-- <div class="w-full px-15 mx-auto"> -->
+                    <div class="max-w-540 my-0 mx-auto">       
+                        <h1 class="font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
+                            <p class="font-Lato text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
+                                <div class="mt-48">
+                                    <button class="btn btn-default btn-animation border-3 border-solid bg-regal-purple border-regal-purple py-13 px-24 mr-10 leading-12.6">portfolio</button>
+                                    <button class="btn btn-alt btn-animation border-3 border-solid border-regal-black py-13 px-24 leading-12.6">hire me</button>
+                                </div>
+                    </div>        
+    
+                    <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93%">
+                        <a class="mouse-wrapper">
+                            <span class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
+                                <span class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
+                            </span>
+                        </a>
+                    </div>       
+                <!-- </div>          -->
         </section>
         <!-- Section Home End -->
     
@@ -274,7 +278,6 @@
                     </ul>
 
                     <div class="pf-filter-wrapper relative hidden">
-                        
                         <select class="portfolio-filter-mobile text-13 font-bold uppercase border-2 border-solid border-regal-black rounded-none outline-0 mb-30 relative w-full" name="" id="">
                             <option value="*">Everything</option>
                             <option value=".creative">Creative</option>
@@ -609,29 +612,29 @@
                             <p class="text-regal-grey-1 font-Lato text-base leading-4 mb-62">West Palm Beach, 4669 Travis Street</p>
                         </div>
                     </div>
-                    <form id="contact-form" class="nda-contact-form" method="post" action="" novalidate="true">
+                    <form id="contact-form" class="contact-form" method="post" action="" novalidate="true">
                         <div class="grid grid-cols-3 gap-24">
                             <div class="mb-30">
-                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-regal-white bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Your Name" required="required" data-error="Name is required">
+                                <input type="text" class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Your Name" required="required" data-error="Name is required">
                             </div>
     
                             <div class="mb-30">
-                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-regal-white bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Email address" required="required" data-error="Name is required">
+                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Email address" required="required" data-error="Name is required">
                             </div>
     
                             <div class="mb-30">
-                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-regal-white bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Subject" required="required" data-error="Name is required">
+                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none" name="InputName" id="InputName" placeholder="Subject" required="required" data-error="Name is required">
                             </div>
                         </div>
     
                         <div class="grid grid-cols-1">
                             <div class="mb-30">
-                                <textarea name="InputMessage" id="InputMessage" class="nda-form-control" rows="4" placeholder="Message" required="required" data-error="Message is required."></textarea>
+                                <textarea name="InputMessage" id="InputMessage" class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-white bg-none border-1 border-solid border-regal-gr-w shadow-none" rows="4" placeholder="Message" required="required" data-error="Message is required."></textarea>
                             </div>
                         </div>
                     </form>
                     <div>
-                        <button type="submit" id="submit" value="submit" class="btn btn-default btn-full btn-animation border-3 border-solid border-regal-purple bg-regal-purple w-full rounded-none overflow-hidden leading-0.9 py-16 px-24 relative">Submit Message</button>
+                        <button type="submit" id="submit" value="submit" class="btn btn-default btn-full btn-animation border-3 border-solid bg-regal-purple w-full rounded-none overflow-hidden leading-0.9 py-16 px-24 relative">Submit Message</button>
                     </div>
                 </div>        
             </div>          
