@@ -1114,6 +1114,11 @@ video {
   background-color: transparent;
 }
 
+.bg-white {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+}
+
 .bg-none {
   background-image: none;
 }
@@ -1486,8 +1491,9 @@ video {
   outline-width: 0px;
 }
 
-.nda-container{
-}
+/* .nda-container{
+        @apply
+    } */
 
 html{
   overflow-x: hidden;
@@ -2060,6 +2066,15 @@ header.desktop-header .vertical-menu li a:after {
 .hover\:after\:h-7:hover::after {
   content: var(--tw-content);
   height: 7px;
+}
+
+.focus\:border-regal-purple:focus {
+  --tw-border-opacity: 1;
+  border-color: rgb(144 19 254 / var(--tw-border-opacity));
+}
+
+.focus\:outline-0:focus {
+  outline-width: 0px;
 }
 
 .\[\&\:not\(\:last-child\)\]\:mr-16:not(:last-child) {
