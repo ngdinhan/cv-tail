@@ -14,7 +14,7 @@
 </head>
 
 <body class="bg-regal-white text-base overflow-hidden">
-    
+
     <!-- mobile header start -->
     <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 hidden">
         <div class="w-full pl-15 pr-15 ml-auto mr-auto">
@@ -36,11 +36,13 @@
     <!-- mobile header end -->
 
     <!-- desktop header start -->
-    <header class="desktop-header py-40 px-60 w-300 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden">
-        <div>
-            <img src="./build/img/logo.png" alt="" class="rounded-full ">
-        </div>
-
+    <header class="desktop-header py-40 pr-30 pl-40 w-240 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden">
+       <div>
+            <a href="index.html">
+                <img src="./build/img/logo.png" alt="" class="rounded-full">
+            </a>
+       </div>
+            
         <h2 class="site-title font-black uppercase text-2xl font-Montserrat mt-22 mb-40 hover:text-regal-purple hover:cursor-pointer">Mugi Dou</h2>
 
         <nav>
@@ -55,7 +57,7 @@
             </ul>
         </nav>
 
-        <footer class="mt-auto">
+        <div class="mt-auto">
             <button class="mt-32 leading-14"><i class="fas fa-search text-black mr-12.3 text-sm font-black"></i><span class="font-Lato text-regal-grey-1 text-sm">Search...</span></button>
             <ul class="social-items list-inline mt-45 mb-14 list-none pl-0">
                 <li class="list-inline-item inline-block mr-18.6 -ml-1">
@@ -72,7 +74,7 @@
                 </li>
             </ul>
             <span class="text-regal-grey-2 font-Lato text-sm">© 2021 Mugi theme.</span>
-        </footer>            
+        </div>            
     </header> 
     <!-- desktop header end -->    
     
@@ -82,7 +84,7 @@
         <section id="home" class="home h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
                 <div class="w-full px-15 mx-auto">
                     <div class="max-w-540 m-auto">       
-                        <h1 class="font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
+                        <h1 class="home-title font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
                             <p class="font-Lato text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
                                 <div class="mt-48">
                                     <button class="btn btn-default btn-animation mr-10 transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t">portfolio</button>
@@ -151,7 +153,7 @@
     
         <!-- Section Skills Start -->
         <section id="skills">
-            <div class="nda-container">
+            <div class="w-full px-15 mx-auto">
                 <div class="max-w-1080 mx-auto">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Skills</h2>
                     <div class="grid grid-cols-2 gap-x-30 gap-y-55">
@@ -640,6 +642,8 @@
                 </div>        
             </div>          
         </section>
+
+        
         <!-- Section Contact End -->
     </main> 
     <!-- main layout end -->

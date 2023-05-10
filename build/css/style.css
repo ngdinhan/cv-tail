@@ -854,12 +854,12 @@ video {
   width: 20px;
 }
 
-.w-25 {
-  width: 25px;
+.w-240 {
+  width: 240px;
 }
 
-.w-300 {
-  width: 300px;
+.w-25 {
+  width: 25px;
 }
 
 .w-33 {
@@ -1161,11 +1161,6 @@ video {
   padding-right: 30px;
 }
 
-.px-60 {
-  padding-left: 60px;
-  padding-right: 60px;
-}
-
 .px-70 {
   padding-left: 70px;
   padding-right: 70px;
@@ -1224,12 +1219,20 @@ video {
   padding-left: 15px;
 }
 
+.pl-40 {
+  padding-left: 40px;
+}
+
 .pl-50 {
   padding-left: 50px;
 }
 
 .pr-15 {
   padding-right: 15px;
+}
+
+.pr-30 {
+  padding-right: 30px;
 }
 
 .text-center {
@@ -1762,6 +1765,12 @@ header.desktop-header .vertical-menu li a:after {
 }
 
 /* button end */
+
+/* @media (max-width: 768px) {
+        .home-title{
+            font-size:30px;
+        }
+    } */
 
 .before\:absolute::before {
   content: var(--tw-content);

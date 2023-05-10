@@ -6,7 +6,7 @@ const time = ratio * $(window).height();
 const secs2 = 1000;
 const ratio2 = (secs2 / height);
 const time2 = ratio2 * $(window).height();
-$('.mouse-wrapper').on('click', function(){
+$('.mouse').on('click', function(){
     $('html, body').animate({
     scrollTop:  $('#services').offset().top
     }, time, "linear");
