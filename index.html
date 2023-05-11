@@ -16,7 +16,7 @@
 <body class="bg-regal-white text-base overflow-hidden">
 
     <!-- mobile header start -->
-    <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 hidden">
+    <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden">
         <div class="w-full pl-15 pr-15 ml-auto mr-auto">
             <div class="mobile-item flex items-center">
                 <div class="menu-icon inline-flex mr-25">
@@ -36,7 +36,7 @@
     <!-- mobile header end -->
 
     <!-- desktop header start -->
-    <header class="desktop-header py-40 pr-30 pl-40 w-240 flex items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden">
+    <header class="desktop-header py-40 pr-30 pl-40 w-240 items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden hidden lg:flex">
        <div>
             <a href="index.html">
                 <img src="./build/img/logo.png" alt="" class="rounded-full">
@@ -79,20 +79,20 @@
     <!-- desktop header end -->    
     
     <!-- main layout start -->
-    <main class="ml-300">   
+    <main class="ml-0 lg:ml-300">   
         <!-- Section Home Start -->
-        <section id="home" class="home h-screen min-h-screen border-t-0 p-0 page-section flex items-center">
+        <section id="home" class="home h-auto md:h-screen min-h-auto md:min-h-screen border-t-0 py-100 px-0 md:p-0 page-section flex items-center">
                 <div class="w-full px-15 mx-auto">
                     <div class="max-w-540 m-auto">       
-                        <h1 class="home-title font-Montserrat text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
-                            <p class="font-Lato text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
+                        <h1 class="home-title font-Montserrat text-52 md:text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
+                            <p class="font-Lato text-base md:text-xl leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
                                 <div class="mt-48">
                                     <button class="btn btn-default btn-animation mr-10 transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t">portfolio</button>
                                     <button class="btn btn-alt btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-black bg-transparent border-3 border-solid border-regal-black hover:text-regal-white hover:border-regal-black before:bg-regal-black duration-0.3 shadow-001t">hire me</button>
                                 </div>
                     </div>        
     
-                    <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93%">
+                    <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93% hidden md:block">
                         <a class="mouse-wrapper">
                             <span class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
                                 <span class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
@@ -105,8 +105,8 @@
     
         <!-- Section Services Start -->
         <section id="services" class="page-section">
-            <div class="w-full px-15 mx-auto">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Services</h2>
     
                     <div class="grid grid-cols-3 gap-x-30 gap-y-56">
@@ -153,8 +153,8 @@
     
         <!-- Section Skills Start -->
         <section id="skills">
-            <div class="w-full px-15 mx-auto">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Skills</h2>
                     <div class="grid grid-cols-2 gap-x-30 gap-y-55">
                         <div class="skills-item">
@@ -208,8 +208,8 @@
     
         <!-- Section Experience Start -->
         <section id="experience" class="page-section">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Experience</h2>
                     <div class="grid grid-cols-2 gap-x-30">
                         <div class="relative">
@@ -269,8 +269,8 @@
     
         <!-- Section Works Start -->
         <section id="works" class="page-section">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Works</h2>
                     <ul class="portfolio-filter list-inline mb-49 pl-0 list-none">
                         <li class="current list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter="*">Everything</li>
@@ -381,8 +381,8 @@
     
         <!-- Section Fun Facts Start -->
         <section id="facts">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Fun Facts</h2>
                     <div class="grid grid-cols-4 gap-30">
                         <div class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none">
@@ -416,8 +416,8 @@
     
         <!-- Section Prices Start -->
         <section id="prices">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Prices</h2>
                     <div class="grid grid-cols-3">
 
@@ -471,8 +471,8 @@
     
         <!-- Section Testimonials Start -->
         <section id="testimonials" class="page-section">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Testimonials</h2>
                     <div class="nda-test-list">
                         <div class="text-center mx-auto w-700">
@@ -500,8 +500,8 @@
     
         <!-- Section Blogs Start-->
         <section id="blog" class="page-section">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <div class="flex justify-between">
                         <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Latest posts</h2>
                         <a href="" class="text-sm font-Montserrat font-bold text-regal-black no-underline mt-8">VIEW ALL »</a>
@@ -552,8 +552,8 @@
     
         <!-- Section Client Start -->
         <section id="clients">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Clients</h2>
                     <div class="grid grid-cols-4 gap-x-30">
                         <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
@@ -593,8 +593,8 @@
     
         <!-- Section Contact Start -->
         <section id="contact" class="page-section">
-            <div class="nda-container">
-                <div class="max-w-1080 mx-auto">
+            <div class="w-full max-w-1080 px-15 mx-auto">
+                <div class="">
                     <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Contact</h2>
                     <div class="grid grid-cols-3 gap-24">
                         <div class="text-center">

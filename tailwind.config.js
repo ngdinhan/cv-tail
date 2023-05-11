@@ -25,6 +25,7 @@ module.exports = {
         '13':'13px',
         '14':'14px',
         '15':'15px',
+        '52':'52px',
         '100': '100px',
       },
       opacity:{
@@ -144,6 +145,7 @@ module.exports = {
       },
       minHeight:{
         '80': '80px',
+        'auto': 'auto',
       },
       lineHeight:{
         '0.9': '0.9',
