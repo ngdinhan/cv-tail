@@ -878,10 +878,6 @@ video {
   width: 60px;
 }
 
-.w-700 {
-  width: 700px;
-}
-
 .w-75\% {
   width: 75%;
 }
@@ -944,18 +940,6 @@ video {
 
 .grid-cols-1 {
   grid-template-columns: repeat(1, minmax(0, 1fr));
-}
-
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
-.grid-cols-3 {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-}
-
-.grid-cols-4 {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -1161,11 +1145,6 @@ video {
   padding-right: 30px;
 }
 
-.px-70 {
-  padding-left: 70px;
-  padding-right: 70px;
-}
-
 .px-8 {
   padding-left: 8px;
   padding-right: 8px;
@@ -1295,8 +1274,8 @@ video {
   line-height: 2.5rem;
 }
 
-.text-52 {
-  font-size: 52px;
+.text-50 {
+  font-size: 50px;
 }
 
 .text-5xl {
@@ -1391,14 +1370,6 @@ video {
 
 .leading-24 {
   line-height: 24px;
-}
-
-.leading-30 {
-  line-height: 30px;
-}
-
-.leading-4 {
-  line-height: 1rem;
 }
 
 .leading-5 {
@@ -1770,12 +1741,6 @@ header.desktop-header .vertical-menu li a:after {
 
 /* button end */
 
-/* @media (max-width: 768px) {
-        .home-title{
-            font-size:30px;
-        }
-    } */
-
 .before\:absolute::before {
   content: var(--tw-content);
   position: absolute;
@@ -2130,9 +2095,19 @@ header.desktop-header .vertical-menu li a:after {
   transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 }
 
+@media (min-width: 640px) {
+  .sm\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
 @media (min-width: 768px) {
   .md\:block {
     display: block;
+  }
+
+  .md\:hidden {
+    display: none;
   }
 
   .md\:h-screen {
@@ -2141,6 +2116,18 @@ header.desktop-header .vertical-menu li a:after {
 
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:grid-cols-2 {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-3 {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+
+  .md\:grid-cols-4 {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 
   .md\:p-0 {
@@ -2156,6 +2143,10 @@ header.desktop-header .vertical-menu li a:after {
     font-size: 1.25rem;
     line-height: 1.75rem;
   }
+
+  .md\:leading-30 {
+    line-height: 30px;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -2169,6 +2160,40 @@ header.desktop-header .vertical-menu li a:after {
 
   .lg\:hidden {
     display: none;
+  }
+
+  .lg\:w-700 {
+    width: 700px;
+  }
+
+  .lg\:max-w-1080 {
+    max-width: 1080px;
+  }
+
+  .lg\:px-70 {
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
+  .lg\:py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (min-width: 1600px) {
+  .\33xl\:w-300 {
+    width: 300px;
+  }
+
+  .\33xl\:px-60 {
+    padding-left: 60px;
+    padding-right: 60px;
+  }
+
+  .\33xl\:py-40 {
+    padding-top: 40px;
+    padding-bottom: 40px;
   }
 }
 

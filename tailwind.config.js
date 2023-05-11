@@ -22,10 +22,11 @@ module.exports = {
       fontSize:{
         '8':'8px',
         '11':'11px',
+        '12':'12px',
         '13':'13px',
         '14':'14px',
         '15':'15px',
-        '52':'52px',
+        '50':'50px',
         '100': '100px',
       },
       opacity:{
@@ -52,6 +53,7 @@ module.exports = {
       maxWidth:{
         '93%': '93%',
         '50': '50px',
+        '280': '280px',
         '540': '540px',
         '1606': '1606px',
         '1080': '1080px',
@@ -90,6 +92,7 @@ module.exports = {
         '25': '25px',
         '26': '26px',
         '30': '30px',
+        '35': '35px',
         '40': '40px',
         '50': '50px',
         '53': '53px',
@@ -191,7 +194,10 @@ module.exports = {
       },
       boxShadow: {
         '001t': '0 0 1px transparent',
-      }
+      },
+      screens: {
+        '3xl': '1600px',
+      },
     },
   },
   plugins: [],
