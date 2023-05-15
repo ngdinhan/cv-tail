@@ -282,5 +282,10 @@
             margin-left: 0;
         }
     }
+    @media (max-width:767px){
+        .blogs-info{
+            flex-direction:column;
+        }
+    }
     /* custom button end */
 }
