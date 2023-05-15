@@ -13,10 +13,10 @@
     <link rel="stylesheet" href="./build/css/style.css">
 </head>
 
-<body class="bg-regal-white text-base overflow-hidden">
+<body class="bg-regal-white text-base overflow-x-hidden">
 
     <!-- mobile header start -->
-    <header class="bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden">
+    <header class="mobile-header bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden">
         <div class="w-full pl-15 pr-15 ml-auto mr-auto">
             <div class="mobile-item flex items-center">
                 <div class="menu-icon inline-flex mr-25">
@@ -36,7 +36,7 @@
     <!-- mobile header end -->
 
     <!-- desktop header start -->
-    <header class="desktop-header py-40 pr-30 pl-40 3xl:py-40 3xl:px-60 w-240 3xl:w-300 items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden hidden lg:flex">
+    <header class="desktop-header py-40 pr-30 pl-40 3xl:py-40 3xl:px-60 w-240 3xl:w-300 items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden flex lg:flex">
        <div class="site-logo">
             <a href="index.html">
                 <img src="./build/img/logo.png" alt="" class="rounded-full">
@@ -79,7 +79,7 @@
     <!-- desktop header end -->    
     
     <!-- main layout start -->
-    <main class="content ml-0 lg:ml-300">   
+    <main class="content main-layout ml-0 lg:ml-300">   
         <!-- Section Home Start -->
         <section id="home" class="home h-auto md:h-screen min-h-auto md:min-h-screen border-t-0 py-100 px-0 md:p-0 page-section flex items-center">
                 <div class="w-full lg:max-w-1080 px-15 mx-auto">
@@ -300,7 +300,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works1.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -313,7 +313,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works2.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -326,7 +326,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works3.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -339,7 +339,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works4.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -352,7 +352,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works5.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -365,7 +365,7 @@
                                     </div>
                                     <div class="thumb overflow-hidden">
                                         <img src="./build/img/works6.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full"></div>
+                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
                                     </div>
                                 </div>
                             </div>
@@ -663,8 +663,27 @@
             time:1000,   
         });
 
-      
+        $('.menu-icon button').on( 'click', function() {
+            $('header.desktop-header, .main-layout, header.mobile-header').toggleClass('open');
+        });
 
+        $('main.main-layout').on( 'click', function() {
+            $('header.desktop-header, .main-layout, header.mobile-header').removeClass('open');
+        });
+
+        $('.vertical-menu li a').on( 'click', function() {
+            $('header.desktop-header, .main-layout, header.mobile-header').removeClass('open');
+        });
+
+        $('.search-button').on( 'click', function() {
+            $('.search-popup').addClass('open');
+        });
+
+        $('.search-popup .close').on( 'click', function() {
+            $('.search-popup').removeClass('open');
+        });
+
+        $( ".reply-title" ).prependTo( ".comment-respond" );
 
         $(window).scroll(function() {
         if ($(this).scrollTop() >= 500) {        

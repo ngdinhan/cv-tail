@@ -3,28 +3,25 @@
 @tailwind utilities;
 
 @layer utilities{
-    /* .nda-container{
-        @apply
-    } */
     html{
         overflow-x: hidden;
         scroll-behavior: auto;
         scroll-padding-top: 1rem; 
     }
-    /* body {
-        background-color: #fff;
-        font-size: 16px;
-        overflow-x: hidden;
-        max-width: 1920px;
-    } */
     section {
         border-top: solid 1px #ececec;
         padding-top: 100px;
         padding-bottom: 100px;
         position: relative; 
     }
-    
+
     /* menu desktop header start */
+    header.desktop-header {
+        -webkit-transform: translateX(0);
+        transform: translateX(0);
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
     header.desktop-header .site-title:hover{
         transition:all 0.3s ease-in-out;
     }
@@ -197,7 +194,6 @@
         -webkit-transform: translateY(0);
         -ms-transform: translateY(0);
         transform: translateY(0);
-        cursor: pointer;
     }
     /* section works end */
 
@@ -245,4 +241,46 @@
     }
     /* button end */
  
+    
+    /* custom button start */
+    header.mobile-header{
+        border-bottom: 1px solid #ececec;
+        transition: all 0.3s ease-in-out;
+    }
+    header.mobile-header.open {
+        -webkit-transform: translateX(240px);
+        transform: translateX(240px);
+    }
+    main.content {
+        -webkit-transition: all 0.3s ease-in-out;
+        -moz-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .main-layout {
+        margin-left: 240px;
+        -webkit-transition: all 0.3s ease-in-out;
+        transition: all 0.3s ease-in-out;
+    }
+    .main-layout.open {
+        opacity: 0.4;
+        -webkit-transform: translateX(240px);
+        transform: translateX(240px);
+    }
+    @media only screen and (max-width: 991px){
+        header.mobile-header {
+            display: block;
+        }
+        header.desktop-header {
+            -webkit-transform: translateX(-240px);
+            transform: translateX(-240px);
+        }
+        header.desktop-header.open {
+            -webkit-transform: translateX(0);
+            transform: translateX(0);
+        }
+        .main-layout {
+            margin-left: 0;
+        }
+    }
+    /* custom button end */
 }

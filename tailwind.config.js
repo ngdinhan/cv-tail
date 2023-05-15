@@ -197,6 +197,8 @@ module.exports = {
       },
       screens: {
         '3xl': '1600px',
+        'md-max': {'max':'769px'}
+
       },
     },
   },
