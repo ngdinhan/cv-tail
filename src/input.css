@@ -290,5 +290,10 @@
             margin-bottom:30px;
         }
     }
+    @media (min-width:576px){
+        .nda-container{
+            max-width:540px;
+        }
+    }
     /* custom button end */
 }
