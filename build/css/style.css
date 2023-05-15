@@ -1785,6 +1785,10 @@ main.content {
   .blogs-info{
     flex-direction:column;
   }
+
+  .prices-item{
+    margin-bottom:30px;
+  }
 }
 
 /* custom button end */
