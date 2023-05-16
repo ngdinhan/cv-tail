@@ -8,7 +8,6 @@ window.onscroll = () => {
         const sectionTop = section.offsetTop - 80;
         if (pageYOffset >= sectionTop) {
             current = section.getAttribute("id");
-            console.log("current: ", current);
         }
     });
 
@@ -70,15 +69,9 @@ $(window).scroll(function() {
 // return to top end
 
 // counter up number start
-// let CountNumber=0
-// if(CountNumber==0){
     $('.count').counterUp({
         delay:10,
         time:1000,    
     });
-//     CountNumber=1;
-// }
-// console.log(CountNumber)
-
 // counter up number end 
 

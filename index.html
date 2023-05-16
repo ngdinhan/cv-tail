@@ -1,661 +1,1408 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Profile</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css" integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./build/css/style.css">
-</head>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700;0,900;1,400&family=Montserrat:wght@300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/simple-line-icons/2.5.5/css/simple-line-icons.css"
+      integrity="sha512-9Tu/Gu0+bXW+oGrTGJOeNz2RG4MaF52FznXCciXFrXehFTLF6phJnJFNVOU2mmj9FWIXk9ap0H1ocygu1ZTRqg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="./build/css/style.css" />
+  </head>
 
-<body class="bg-regal-white text-base overflow-x-hidden">
-
+  <body class="bg-regal-white text-base overflow-x-hidden">
     <!-- mobile header start -->
-    <header class="mobile-header bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden">
-        <div class="w-full pl-15 pr-15 ml-auto mr-auto">
-            <div class="mobile-item flex items-center">
-                <div class="menu-icon inline-flex mr-25">
-                    <button class="bg-transparent border-0 cursor-pointer outline-0 p-0 h-33 w-33">
-                        <span class="block bg-regal-black h-4 relative w-20 before:content-[''] before:block before:bg-regal-black before:h-4 before:-top-10 before:absolute before:w-30 after:content-[''] after:block after:bg-regal-black after:h-4 after:top-10 after:absolute after:w-10"></span>
-                    </button> 
-                </div>
-    
-                <div class="site-logo">
-                    <img src="./build/img/logo.png" alt="" class="rounded-full mr-16 max-h-50 max-w-50 inline-block">
-                </div>
-    
-                <h2 class="font-black text-lg font-Montserrat uppercase inline-block">Mugi Dou</h2>
-            </div>
+    <header
+      class="mobile-header bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden"
+    >
+      <div class="w-full pl-15 pr-15 ml-auto mr-auto">
+        <div class="mobile-item flex items-center">
+          <div class="menu-icon inline-flex mr-25">
+            <button
+              class="bg-transparent border-0 cursor-pointer outline-0 p-0 h-33 w-33"
+            >
+              <span
+                class="block bg-regal-black h-4 relative w-20 before:content-[''] before:block before:bg-regal-black before:h-4 before:-top-10 before:absolute before:w-30 after:content-[''] after:block after:bg-regal-black after:h-4 after:top-10 after:absolute after:w-10"
+              ></span>
+            </button>
+          </div>
+
+          <div class="site-logo">
+            <img
+              src="./build/img/logo.png"
+              alt=""
+              class="rounded-full mr-16 max-h-50 max-w-50 inline-block"
+            />
+          </div>
+
+          <h2 class="font-black text-lg font-Montserrat uppercase inline-block">
+            Mugi Dou
+          </h2>
         </div>
+      </div>
     </header>
     <!-- mobile header end -->
 
     <!-- desktop header start -->
-    <header class="desktop-header py-40 pr-30 pl-40 3xl:py-40 3xl:px-60 w-240 3xl:w-300 items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden flex lg:flex">
-       <div class="site-logo">
-            <a href="index.html">
-                <img src="./build/img/logo.png" alt="" class="rounded-full">
-            </a>
-       </div>
-            
-        <h2 class="site-title font-black uppercase text-2xl font-Montserrat mt-22 mb-40 hover:text-regal-purple hover:cursor-pointer">Mugi Dou</h2>
+    <header
+      class="desktop-header py-40 pr-30 pl-40 3xl:py-40 3xl:px-60 w-240 3xl:w-300 items-start flex-col h-auto min-h-screen bg-regal-white border-r-1 bottom-0 border-solid border-regal-gr-w fixed top-0 left-0 z-1 overflow-y-auto overflow-x-hidden flex lg:flex"
+    >
+      <div class="site-logo">
+        <a href="index.html">
+          <img src="./build/img/logo.png" alt="" class="rounded-full" />
+        </a>
+      </div>
 
-        <nav>
-            <ul class="vertical-menu list-none p-0 mb-0 cursor-pointer">
-                <li class="home active py-8 px-0 relative table list-none"><a class="scroll-home text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#home">Home</a></li>
-                <li class="services py-8 px-0 relative table list-none"><a class="scroll-services text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#services">Services</a></li>
-                <li class="experience py-8 px-0 relative table list-none"><a class="scroll-experience text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#experience">Experience</a></li>
-                <li class="works py-8 px-0 relative table list-none"><a class="scroll-works text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#works">Works</a></li>
-                <li class="testimonials py-8 px-0 relative table list-none"><a class="scroll-testimonials text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#testimonials">Testimonials</a></li>
-                <li class="blog py-8 px-0 relative table list-none"><a class="scroll-blog text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#blog">Blog</a></li>
-                <li class="contact py-8 px-0 relative table list-none"><a class="scroll-contact text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1" href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+      <h2
+        class="site-title font-black uppercase text-2xl font-Montserrat mt-22 mb-40 hover:text-regal-purple hover:cursor-pointer"
+      >
+        Mugi Dou
+      </h2>
 
-        <div class="footer mt-auto">
-            <button class="search-button mt-32 leading-14"><i class="fas fa-search text-black mr-12.3 text-sm font-black"></i><span class="font-Lato text-regal-grey-1 text-sm">Search...</span></button>
-            <ul class="social-items list-inline mt-45 mb-14 list-none pl-0">
-                <li class="list-inline-item inline-block mr-18.6 -ml-1">
-                    <a href="" class="text-regal-black hover:text-regal-purple"><i class="fab fa-facebook-f"></i></a>
-                </li>
-                <li class="list-inline-item inline-block mr-18.6 -ml-1">
-                    <a href="" class="text-regal-black hover:text-regal-purple"><i class="fab fa-twitter"></i></a>
-                </li>
-                <li class="list-inline-item inline-block mr-18.6 -ml-1">
-                    <a href="" class="text-regal-black hover:text-regal-purple"><i class="fab fa-instagram"></i></a>
-                </li>
-                <li class="list-inline-item inline-block mr-18.6 -ml-1">
-                    <a href="" class="text-regal-black hover:text-regal-purple"><i class="fab fa-linkedin-in"></i></a>
-                </li>
-            </ul>
-            <span class="copyright text-regal-grey-2 font-Lato text-sm">© 2021 Mugi theme.</span>
-        </div>            
-    </header> 
-    <!-- desktop header end -->    
-    
+      <nav>
+        <ul class="vertical-menu list-none p-0 mb-0 cursor-pointer">
+          <li class="home active py-8 px-0 relative table list-none">
+            <a
+              class="scroll-home text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#home"
+              >Home</a
+            >
+          </li>
+          <li class="services py-8 px-0 relative table list-none">
+            <a
+              class="scroll-services text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#services"
+              >Services</a
+            >
+          </li>
+          <li class="experience py-8 px-0 relative table list-none">
+            <a
+              class="scroll-experience text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#experience"
+              >Experience</a
+            >
+          </li>
+          <li class="works py-8 px-0 relative table list-none">
+            <a
+              class="scroll-works text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#works"
+              >Works</a
+            >
+          </li>
+          <li class="testimonials py-8 px-0 relative table list-none">
+            <a
+              class="scroll-testimonials text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#testimonials"
+              >Testimonials</a
+            >
+          </li>
+          <li class="blog py-8 px-0 relative table list-none">
+            <a
+              class="scroll-blog text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#blog"
+              >Blog</a
+            >
+          </li>
+          <li class="contact py-8 px-0 relative table list-none">
+            <a
+              class="scroll-contact text-black font-Montserrat text-sm font-bold uppercase no-underline relative hover:after:h-7 after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-px after:opacity-50 after:bottom-0 after:absolute after:-z-1"
+              href="#contact"
+              >Contact</a
+            >
+          </li>
+        </ul>
+      </nav>
+
+      <div class="footer mt-auto">
+        <button class="search-button mt-32 leading-14">
+          <i class="fas fa-search text-black mr-12.3 text-sm font-black"></i
+          ><span class="font-Lato text-regal-grey-1 text-sm">Search...</span>
+        </button>
+        <ul class="social-items list-inline mt-45 mb-14 list-none pl-0">
+          <li class="list-inline-item inline-block mr-18.6 -ml-1">
+            <a href="" class="text-regal-black hover:text-regal-purple"
+              ><i class="fab fa-facebook-f"></i
+            ></a>
+          </li>
+          <li class="list-inline-item inline-block mr-18.6 -ml-1">
+            <a href="" class="text-regal-black hover:text-regal-purple"
+              ><i class="fab fa-twitter"></i
+            ></a>
+          </li>
+          <li class="list-inline-item inline-block mr-18.6 -ml-1">
+            <a href="" class="text-regal-black hover:text-regal-purple"
+              ><i class="fab fa-instagram"></i
+            ></a>
+          </li>
+          <li class="list-inline-item inline-block mr-18.6 -ml-1">
+            <a href="" class="text-regal-black hover:text-regal-purple"
+              ><i class="fab fa-linkedin-in"></i
+            ></a>
+          </li>
+        </ul>
+        <span class="copyright text-regal-grey-2 font-Lato text-sm"
+          >© 2021 Mugi theme.</span
+        >
+      </div>
+    </header>
+    <!-- desktop header end -->
+
     <!-- main layout start -->
-    <main class="content main-layout ml-0 lg:ml-300">   
-        <!-- Section Home Start -->
-        <section id="home" class="home h-auto md:h-screen min-h-auto md:min-h-screen border-t-0 py-100 px-0 md:p-0 page-section flex items-center">
-                <div class="w-full lg:max-w-1080 px-15 mx-auto">
-                    <div class="max-w-540 m-auto">       
-                        <h1 class="home-title font-Montserrat text-50 md:text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase">Hello,</h1>
-                            <p class="font-Lato text-base md:text-xl leading-24 md:leading-30 text-regal-grey-1">I am Mugi Doe, web developer from Melbourne, Australia. I have rich experience in web site design and building and customization, also I am good at wordpress.</p>
-                                <div class="mt-48">
-                                    <button class="btn btn-default btn-animation mr-10 transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t">portfolio</button>
-                                    <button class="btn btn-alt btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-black bg-transparent border-3 border-solid border-regal-black hover:text-regal-white hover:border-regal-black before:bg-regal-black duration-0.3 shadow-001t">hire me</button>
-                                </div>
-                    </div>        
-    
-                    <div class="scroll-down absolute bottom-40 right-70 w-full max-w-93% hidden md:block">
-                        <a class="mouse-wrapper">
-                            <span class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer">
-                                <span class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"></span>
-                            </span>
-                        </a>
-                    </div>       
-                </div>         
-        </section>
-        <!-- Section Home End -->
-    
-        <!-- Section Services Start -->
-        <section id="services" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Services</h2>
-    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-x-30 gap-y-56">
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-globe-alt"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">Development</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-                        
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-bulb"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">UI/UX Design</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-    
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-graph"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">SEO</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-    
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-direction"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">Advertising</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-    
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-pencil"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">Copy Write</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-    
-                        <div class="nda-services-box">
-                            <span class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-earphones"></span>
-                            <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">Support</h4>
-                            <p class="text-base font-Lato leading-24 text-regal-grey-1">There are many variations of passages of Lorem Ipsum available</p>
-                        </div>
-                    </div>
-                </div>  
+    <main class="content main-layout ml-0 lg:ml-300">
+      <!-- Section Home Start -->
+      <section
+        id="home"
+        class="home h-auto md:h-screen min-h-auto md:min-h-screen border-t-0 py-100 px-0 md:p-0 page-section flex items-center"
+      >
+        <div class="w-full lg:max-w-1080 px-15 mx-auto">
+          <div class="max-w-540 m-auto">
+            <h1
+              class="home-title font-Montserrat text-50 md:text-7xl font-black leading-57.6 mb-50 text-regal-black uppercase"
+            >
+              Hello,
+            </h1>
+            <p
+              class="font-Lato text-base md:text-xl leading-24 md:leading-30 text-regal-grey-1"
+            >
+              I am Mugi Doe, web developer from Melbourne, Australia. I have
+              rich experience in web site design and building and customization,
+              also I am good at wordpress.
+            </p>
+            <div class="mt-48">
+              <button
+                class="btn btn-default btn-animation mr-10 transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t"
+              >
+                portfolio
+              </button>
+              <button
+                class="btn btn-alt btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-black bg-transparent border-3 border-solid border-regal-black hover:text-regal-white hover:border-regal-black before:bg-regal-black duration-0.3 shadow-001t"
+              >
+                hire me
+              </button>
             </div>
-        </section>
-        <!-- Section Services End -->
-    
-        <!-- Section Skills Start -->
-        <section id="skills">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Skills</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-30 gap-y-50">
-                        <div class="skills-item">
-                            <div class="skills-info mb-17 flex justify-between">
-                                <h4 class="skills-title text-lg font-bold font-Montserrat">Coding</h4>
-                                <span class="skills-number text-sm text-regal-grey-1 font-Lato">90%</span>
-                            </div>
-    
-                            <div class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
-                                <div class="progress-bar addCoding w-90% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none" aria-valuemin="0" aria-valuemax="100" aria-valuenow="90" per="90"></div>
-                            </div>
-                        </div>
-    
-                        <div class="skills-item">
-                            <div class="mb-17 flex justify-between">
-                                <h4 class="text-lg font-bold font-Montserrat">WordPress</h4>
-                                <span class="text-sm text-regal-grey-1 font-Lato">75%</span>
-                            </div>
-    
-                            <div class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
-                                <div class="progress-bar addWordpress w-75% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none" aria-valuemin="0" aria-valuemax="100" aria-valuenow="75" per="75"></div>
-                            </div>
-                        </div>
-    
-                        <div class="skills-item">
-                            <div class="mb-17 flex justify-between">
-                                <h4 class="text-lg font-bold font-Montserrat">Sketch</h4>
-                                <span class="text-sm text-regal-grey-1 font-Lato">85%</span>
-                            </div>
-    
-                            <div class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
-                                <div class="progress-bar addSketch w-85% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none" aria-valuemin="0" aria-valuemax="100" aria-valuenow="85" per="85"></div>
-                            </div>
-                        </div>
-    
-                        <div class="skills-item">
-                            <div class="mb-17 flex justify-between">
-                                <h4 class="text-lg font-bold font-Montserrat">jQuery</h4>
-                                <span class="text-sm text-regal-grey-1 font-Lato">88%</span>
-                            </div>
-    
-                            <div class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none">
-                                <div class="progress-bar addJquery w-88% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none" aria-valuemin="0" aria-valuemax="100" aria-valuenow="88" per="88"></div>
-                            </div>
-                        </div>
-                    </div>
+          </div>
+
+          <div
+            class="scroll-down absolute bottom-40 right-70 w-full max-w-93% hidden md:block"
+          >
+            <a class="mouse-wrapper">
+              <span
+                class="mouse border-3 border-solid border-regal-black rounded-2xl block m-auto h-34 relative w-25 cursor-pointer"
+              >
+                <span
+                  class="wheel w-5 h-5 block bg-regal-black rounded-full absolute top-8 left-40%"
+                ></span>
+              </span>
+            </a>
+          </div>
+        </div>
+      </section>
+      <!-- Section Home End -->
+
+      <!-- Section Services Start -->
+      <section id="services" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Services
+            </h2>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-x-30 gap-y-56">
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-globe-alt"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  Development
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-bulb"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  UI/UX Design
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-graph"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  SEO
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-direction"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  Advertising
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-pencil"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  Copy Write
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+
+              <div class="nda-services-box">
+                <span
+                  class="text-regal-white text-3xl bg-regal-purple block h-60 w-60 text-center leading-60 icon-earphones"
+                ></span>
+                <h4 class="text-lg font-semibold font-Montserrat mt-30 mb-20">
+                  Support
+                </h4>
+                <p class="text-base font-Lato leading-24 text-regal-grey-1">
+                  There are many variations of passages of Lorem Ipsum available
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Services End -->
+
+      <!-- Section Skills Start -->
+      <section id="skills">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Skills
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-30 gap-y-50">
+              <div class="skills-item">
+                <div class="skills-info mb-17 flex justify-between">
+                  <h4 class="skills-title text-lg font-bold font-Montserrat">
+                    Coding
+                  </h4>
+                  <span
+                    class="skills-number text-sm text-regal-grey-1 font-Lato"
+                    >90%</span
+                  >
                 </div>
-            </div>
-        </section>
-        <!-- Section Skills End -->
-    
-        <!-- Section Experience Start -->
-        <section id="experience" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Experience</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-2 gap-x-30">
-                        <div class="relative">
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2019 - Present</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Academic Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2017 - 2013</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Bachelor's Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2013 - 2009</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Honours Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <span class="absolute w-px bg-regal-gr-w top-7 bottom-0 left-4"></span>
-                        </div>
-    
-                        <div class="relative">
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2019 - Present</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Academic Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2017 - 2013</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Bachelor's Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <div class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1">
-                                <div class="relative">
-                                    <span class="text-regal-grey-2 text-sm font-Lato">2013 - 2009</span>
-                                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">Honours Degree</h4>
-                                    <p class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full">Lorem ipsum dolor sit amet quo ei simul congue exerci ad nec admodum perfecto.</p>
-                                </div>
-                            </div>
-                            <span class="absolute w-px bg-regal-gr-w top-7 bottom-0 left-4"></span>
-                        </div>
-                    </div>
+
+                <div
+                  class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none"
+                >
+                  <div
+                    class="progress-bar addCoding w-90% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="90"
+                    per="90"
+                  ></div>
                 </div>
-            </div>
-        </section>
-        <!-- Section Experience End -->
-    
-        <!-- Section Works Start -->
-        <section id="works" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-94">Works</h2>
-                    <ul class="portfolio-filter list-inline mb-40 pl-0 list-none hidden md:block">
-                        <li class="current list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter="*">Everything</li>
-                        <li class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter=".creative">Art</li>
-                        <li class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter=".art">Branding</li>
-                        <li class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter=".design">Creative</li>
-                        <li class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8" data-filter=".branding">Design</li>
-                    </ul>
+              </div>
 
-                    <div class="pf-filter-wrapper relative block md:hidden">
-                        <select class="portfolio-filter-mobile text-13 font-bold uppercase border-2 border-solid border-regal-black rounded-none outline-0 mb-30 relative w-full" name="" id="">
-                            <option value="*">Everything</option>
-                            <option value=".creative">Creative</option>
-                            <option value=".art">Art</option>
-                            <option value=".design">Design</option>
-                            <option value=".branding">Branding</option>
-                        </select>
-                    </div>
-
-                    <div>
-                        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-30">
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Creative Art</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block [&:(:last-child):after]:content-[''] [&:(:last-child):after]:mr-0">Art, Creative</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works1.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Apple USB</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block [&:(:last-child):after]:content-[''] [&:(:last-child):after]:mr-0">Creative, Design</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works2.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Work Space</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block">Branding</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works3.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Creative Bulb</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block">Creative</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works4.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Iphone 8</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block">Art, Branding</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works5.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-    
-                            <div class="max-w-365 m-auto">
-                                <div class="portfolio-item relative overflow-hidden">
-                                    <div class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1">
-                                        <h4 class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold">Minimal Art</h4>
-                                        <span class="term text-11 uppercase opacity-0 inline-block">Design, Creative</span>
-                                    </div>
-                                    <div class="thumb overflow-hidden flex justify-center">
-                                        <img src="./build/img/works6.jpg" alt="Portfolio-title" class="max-w-full h-auto">
-                                        <div class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="text-center mt-40">
-                        <button class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t"><i class="fas mr-10 hidden text-regal-white"></i>Load More</button>
-                    </div>
-                </div>        
-            </div>
-        </section>
-        <!-- Section Works End -->
-    
-        <!-- Section Fun Facts Start -->
-        <section id="facts">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Fun Facts</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-22">
-                        <div class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none">
-                            <span class="text-regal-purple text-4xl icon-layers"></span>
-                            <h3 class="text-3xl my-8"><em class="count font-Montserrat leading-9 font-bold not-italic">2400</em></h3>
-                            <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">Projects Completed</p>
-                        </div>
-    
-                        <div class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none">
-                            <span class="text-regal-purple text-4xl icon-cup"></span>
-                            <h3 class="text-3xl my-8"><em class="count font-Montserrat leading-9 font-bold not-italic">1300</em></h3>
-                            <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">Cup of coffee</p>
-                        </div>
-    
-                        <div class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none">
-                            <span class="text-regal-purple text-4xl icon-clock"></span>
-                            <h3 class="text-3xl my-8"><em class="count font-Montserrat leading-9 font-bold not-italic">5700</em></h3>
-                            <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">Hours worked</p>
-                        </div>
-    
-                        <div class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none">
-                            <span class="text-regal-purple text-4xl icon-trophy"></span>
-                            <h3 class="text-3xl my-8"><em class="count font-Montserrat leading-9 font-bold not-italic">640</em></h3>
-                            <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">Awards won</p>
-                        </div>
-                    </div>
-                </div>        
-            </div>
-        </section>
-        <!-- Section Fun Facts End -->
-    
-        <!-- Section Prices Start -->
-        <section id="prices">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Prices</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3">
-
-                        <div class="prices-item border-1 border-solid border-regal-gr-w py-40 px-30 lg:py-40 lg:px-70">
-                            <span class="text-regal-white font-Montserrat text-sm font-bold inline-block bg-regal-purple py-3 px-10">Regular</span>
-                            <h3 class="text-5xl font-black font-Montserrat mt-30 mx-0 my-20"><em class="not-italic text-xl mr-10 align-super">$</em>14</h3>
-                            <ul class="list-none mb-0">
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
-                            </ul>
-                            <div class="mt-30">
-                                <button class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t">purchase</button>
-                            </div>
-                        </div>
-    
-                        <div class="prices-item border-1 border-solid border-regal-gr-w bg-regal-purple py-40 px-30 lg:py-40 lg:px-70">
-                            <span class="text-regal-purple font-Montserrat text-sm font-bold inline-block bg-regal-white py-3 px-10">Premium</span>
-                            <h3 class="text-5xl text-regal-white font-black font-Montserrat mt-30 mx-0 my-20"><em class="not-italic text-regal-white text-xl mr-10 align-super">$</em>29</h3>
-                            <ul class="list-none mb-0">
-                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
-                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
-                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
-                                <li class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
-                            </ul>
-                            <div class="mt-30">
-                                <button class="btn btn-alt-light btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white bg-transparent border-3 border-solid border-regal-white hover:text-regal-purple hover:border-regal-white focus:text-regal-purple focus:border-regal-white before:bg-regal-white duration-0.3 shadow-001t">purchase</button>
-                            </div>
-                        </div>
-    
-                        <div class="prices-item border-1 border-solid border-regal-gr-w py-40 px-30 lg:py-40 lg:px-70">
-                            <span class="text-regal-white font-Montserrat text-sm font-bold inline-block bg-regal-purple py-3 px-10">Professional</span>
-                            <h3 class="text-5xl font-black font-Montserrat mt-30 mx-0 my-20"><em class="not-italic text-xl mr-10 align-super">$</em>43</h3>
-                            <ul class="list-none mb-0">
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Frontend Builder</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">Regular Support</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">2 Years of Updates</li>
-                                <li class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5">White Labeling</li>
-                            </ul>
-                            <div class="mt-30">
-                                <button class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t">purchase</button>
-                            </div>
-                        </div>
-
-                    </div>  
+              <div class="skills-item">
+                <div class="mb-17 flex justify-between">
+                  <h4 class="text-lg font-bold font-Montserrat">WordPress</h4>
+                  <span class="text-sm text-regal-grey-1 font-Lato">75%</span>
                 </div>
+
+                <div
+                  class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none"
+                >
+                  <div
+                    class="progress-bar addWordpress w-75% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="75"
+                    per="75"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skills-item">
+                <div class="mb-17 flex justify-between">
+                  <h4 class="text-lg font-bold font-Montserrat">Sketch</h4>
+                  <span class="text-sm text-regal-grey-1 font-Lato">85%</span>
+                </div>
+
+                <div
+                  class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none"
+                >
+                  <div
+                    class="progress-bar addSketch w-85% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="85"
+                    per="85"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="skills-item">
+                <div class="mb-17 flex justify-between">
+                  <h4 class="text-lg font-bold font-Montserrat">jQuery</h4>
+                  <span class="text-sm text-regal-grey-1 font-Lato">88%</span>
+                </div>
+
+                <div
+                  class="progress h-5 mb-0 overflow-hidden bg-regal-gr-w1 rounded-none shadow-none"
+                >
+                  <div
+                    class="progress-bar addJquery w-88% float-left h-full text-xs leading-5 text-center bg-regal-purple shadow-none"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                    aria-valuenow="88"
+                    per="88"
+                  ></div>
+                </div>
+              </div>
             </div>
-        </section>
-        <!-- Section Prices End -->
-    
-        <!-- Section Testimonials Start -->
-        <section id="testimonials" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Testimonials</h2>
-                    <div class="nda-test-list">
-                        <div class="text-center mx-auto sm:w-700">
-                            <span class="text-100 font-Montserrat text-regal-purple leading-1">“</span>
-                            <div class="rounded-50% overflow-hidden h-80 w-80 mx-auto mb-24">
-                                <img src="./build/img/test.jpg" alt="">
-                            </div>
-                            <p class="italic font-Lato font-normal text-lg text-regal-grey-1">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
-                            <h4 class="text-lg font-bold font-Montserrat leading-21.6 mt-24">John Doe</h4>
-                        </div>
-    
-                        <div class="text-center mx-auto sm:w-700">
-                            <span class="text-100 font-Montserrat text-regal-purple leading-1">“</span>
-                            <div class="rounded-50% overflow-hidden h-80 w-80 mx-auto mb-24">
-                                <img src="./build/img/test.jpg" alt="">
-                            </div>
-                            <p class="italic font-Lato font-normal text-lg text-regal-grey-1">I enjoy working with the theme and learn so much. You guys make the process fun and interesting. Good luck!</p>
-                            <h4 class="text-lg font-bold font-Montserrat leading-21.6 mt-24">John Doe</h4>
-                        </div>
-                    </div>
-                </div>        
-            </div>        
-        </section>
-        <!-- Section Testimonials End -->
-    
-        <!-- Section Blogs Start-->
-        <section id="blog" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <div class="blogs-info flex justify-between mb-100">
-                        <h2 class="text-3xl font-black m-0 font-Montserrat uppercase">Latest posts</h2>
-                        <a href="" class="text-sm font-Montserrat font-bold text-regal-black no-underline mt-8">VIEW ALL »</a>
-                    </div>
-    
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
-                        
-                        <div class="blogs-item max-w-365 m-auto">
-                            <div class="thumbnail relative overflow-hidden cursor-pointer">
-                                <a href=""><span class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase">Thoughts</span></a>
-                                <img src="./build/img/blogs1.jpg" alt="" class="max-w-full h-auto object-center object-cover hover:scale-110">
-                            </div>
-                            <h4 class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple">I should be incapable of drawing a single stroke</h4>
-                            <ul class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer">
-                                <li class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">01 february 2019</li>
-                                <li class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple">MUGIADMIN</li>
-                            </ul>
-                        </div>
-                        
-                        <div class="blogs-item max-w-365 m-auto">
-                            <div class="thumbnail relative overflow-hidden cursor-pointer">
-                                <a href=""><span class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase">Blog</span></a>
-                                <img src="./build/img/blogs2.jpg" alt="" class="max-w-full h-auto object-center object-cover hover:scale-110">
-                            </div>
-                            <h4 class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple">While the lovely valley teems with vapour around me</h4>
-                            <ul class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer">
-                                <li class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">01 february 2019</li>
-                                <li class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple">MUGIADMIN</li>
-                            </ul>
-                        </div>
-    
-                        <div class="blogs-item max-w-365 m-auto">
-                            <div class="thumbnail relative overflow-hidden cursor-pointer">
-                                <a href=""><span class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase">Tech</span></a>
-                                <img src="./build/img/blogs3.jpg" alt="" class="max-w-full h-auto object-center object-cover hover:scale-110">
-                            </div>
-                            <h4 class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple">I hear the buzz of the little world among the stalks</h4>
-                            <ul class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer">
-                                <li class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5">31 february 2019</li>
-                                <li class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple">MUGIADMIN</li>
-                            </ul>
-                        </div>
-                    </div>
-                </div>       
+          </div>
+        </div>
+      </section>
+      <!-- Section Skills End -->
+
+      <!-- Section Experience Start -->
+      <section id="experience" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Experience
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-x-30">
+              <div class="relative">
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2019 - Present</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Academic Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2017 - 2013</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Bachelor's Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2013 - 2009</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Honours Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="absolute w-px bg-regal-gr-w top-7 bottom-0 left-4"
+                ></span>
+              </div>
+
+              <div class="relative">
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2019 - Present</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Academic Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2017 - 2013</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Bachelor's Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <div
+                  class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
+                >
+                  <div class="relative">
+                    <span class="text-regal-grey-2 text-sm font-Lato"
+                      >2013 - 2009</span
+                    >
+                    <h4 class="text-lg font-Montserrat font-bold my-20 mx-0">
+                      Honours Degree
+                    </h4>
+                    <p
+                      class="text-regal-grey-1 font-Lato leading-24 text-base md:max-w-280 lg:max-w-full"
+                    >
+                      Lorem ipsum dolor sit amet quo ei simul congue exerci ad
+                      nec admodum perfecto.
+                    </p>
+                  </div>
+                </div>
+                <span
+                  class="absolute w-px bg-regal-gr-w top-7 bottom-0 left-4"
+                ></span>
+              </div>
             </div>
-        </section>
-        <!-- Section Blogs End-->
-    
-        <!-- Section Client Start -->
-        <section id="clients">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Clients</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-4 gap-x-30">
-                        <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
-                            <div class="absolute text-center w-full left-0">
-                                <img src="./build/img/client1.png" alt="" class="inline-block">
-                            </div>
-                        </div>
-    
-                        <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
-                            <div class="absolute text-center w-full left-0">
-                                <img src="./build/img/client2.png" alt="" class="inline-block">
-                            </div>
-                        </div>
-    
-                        <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
-                            <div class="absolute text-center w-full left-0">
-                                <img src="./build/img/client3.png" alt="" class="inline-block">
-                            </div>
-                        </div>
-    
-                        <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
-                            <div class="absolute text-center w-full left-0">
-                                <img src="./build/img/client4.png" alt="" class="inline-block">
-                            </div>
-                        </div>
-    
-                        <div class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none">
-                            <div class="absolute text-center w-full left-0">
-                                <img src="./build/img/client2.png" alt="" class="inline-block">
-                            </div>
-                        </div>
-                    </div>
-                </div>  
+          </div>
+        </div>
+      </section>
+      <!-- Section Experience End -->
+
+      <!-- Section Works Start -->
+      <section id="works" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-94">
+              Works
+            </h2>
+            <ul
+              class="portfolio-filter list-inline mb-40 pl-0 list-none hidden md:block"
+            >
+              <li
+                class="current list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8"
+                data-filter="*"
+              >
+                Everything
+              </li>
+              <li
+                class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8"
+                data-filter=".creative"
+              >
+                Art
+              </li>
+              <li
+                class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8"
+                data-filter=".art"
+              >
+                Branding
+              </li>
+              <li
+                class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8"
+                data-filter=".design"
+              >
+                Creative
+              </li>
+              <li
+                class="list-inline-item inline-block text-regal-grey-0 cursor-pointer font-Montserrat text-13 font-bold uppercase relative after:content-[''] after:bg-regal-purple after:w-full after:h-0 after:left-0 after:opacity-50 after:bottom-px after:absolute after:-z-1 hover:text-regal-black hover:after:h-7 [&:not(:last-child)]:mr-28.8"
+                data-filter=".branding"
+              >
+                Design
+              </li>
+            </ul>
+
+            <div class="pf-filter-wrapper relative block md:hidden">
+              <select
+                class="portfolio-filter-mobile text-13 font-bold uppercase border-2 border-solid border-regal-black rounded-none outline-0 mb-30 relative w-full"
+                name=""
+                id=""
+              >
+                <option value="*">Everything</option>
+                <option value=".creative">Creative</option>
+                <option value=".art">Art</option>
+                <option value=".design">Design</option>
+                <option value=".branding">Branding</option>
+              </select>
             </div>
-        </section>
-        <!-- Section Client End -->
-    
-        <!-- Section Contact Start -->
-        <section id="contact" class="page-section">
-            <div class="w-full max-w-1080 px-15 mx-auto">
-                <div class="">
-                    <h2 class="text-3xl font-black m-0 font-Montserrat uppercase mb-100">Contact</h2>
-                    <div class="grid grid-cols-1 md:grid-cols-3 gap-30">
-                        <div class="text-center">
-                            <span class="text-regal-purple text-4xl icon-phone"></span>
-                            <h4 class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14">Call us</h4>
-                            <p class="text-regal-grey-1 font-Lato text-base mb-60">+976 9886-4334</p>
-                        </div>
-    
-                        <div class="text-center">
-                            <span class="text-regal-purple text-4xl icon-envelope-open"></span>
-                            <h4 class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14">Email us</h4>
-                            <p class="text-regal-grey-1 font-Lato text-base mb-60">hello@domain.website</p>
-                        </div>
-    
-                        <div class="text-center">
-                            <span class="text-regal-purple text-4xl icon-location-pin"></span>
-                            <h4 class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14">Visit us</h4>
-                            <p class="text-regal-grey-1 font-Lato text-base mb-60">West Palm Beach, 4669 Travis Street</p>
-                        </div>
+
+            <div>
+              <div
+                class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-30"
+              >
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Creative Art
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block [&:(:last-child):after]:content-[''] [&:(:last-child):after]:mr-0"
+                        >Art, Creative</span
+                      >
                     </div>
-                    <form id="contact-form" class="contact-form" method="post" action="" novalidate="true">
-                        <div class="grid grid-cols-1 md:grid-cols-3 gap-30">
-                            <div class="mb-30">
-                                <input type="text" class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple" name="InputName" id="InputName" placeholder="Your Name" required="required" data-error="Name is required">
-                            </div>
-    
-                            <div class="mb-30">
-                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple" name="InputName" id="InputName" placeholder="Email address" required="required" data-error="Name is required">
-                            </div>
-    
-                            <div class="mb-30">
-                                <input type="text" class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple" name="InputName" id="InputName" placeholder="Subject" required="required" data-error="Name is required">
-                            </div>
-                        </div>
-    
-                        <div class="grid grid-cols-1">
-                            <div class="mb-30">
-                                <textarea name="InputMessage" id="InputMessage" class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-white bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple" rows="4" placeholder="Message" required="required" data-error="Message is required."></textarea>
-                            </div>
-                        </div>
-                    </form>
-                    <div>
-                        <button type="submit" id="submit" value="submit" class="btn btn-default btn-full btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white text-center w-full duration-0.3 shadow-001t">Submit Message</button>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works1.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
                     </div>
-                </div>        
-            </div>          
-        </section>
-        <!-- Section Contact End -->
+                  </div>
+                </div>
+
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Apple USB
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block [&:(:last-child):after]:content-[''] [&:(:last-child):after]:mr-0"
+                        >Creative, Design</span
+                      >
+                    </div>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works2.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Work Space
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block"
+                        >Branding</span
+                      >
+                    </div>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works3.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Creative Bulb
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block"
+                        >Creative</span
+                      >
+                    </div>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works4.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Iphone 8
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block"
+                        >Art, Branding</span
+                      >
+                    </div>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works5.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="max-w-365 m-auto">
+                  <div class="portfolio-item relative overflow-hidden">
+                    <div
+                      class="details text-regal-white absolute py-0 px-30 bottom-25 w-full z-1"
+                    >
+                      <h4
+                        class="title text-regal-white mt-0 mx-0 mb-4 opacity-0 font-Montserrat text-lg font-bold"
+                      >
+                        Minimal Art
+                      </h4>
+                      <span
+                        class="term text-11 uppercase opacity-0 inline-block"
+                        >Design, Creative</span
+                      >
+                    </div>
+                    <div class="thumb overflow-hidden flex justify-center">
+                      <img
+                        src="./build/img/works6.jpg"
+                        alt="Portfolio-title"
+                        class="max-w-full h-auto"
+                      />
+                      <div
+                        class="mask bg-regal-purple absolute left-0 top-0 opacity-0.9 h-full w-full cursor-pointer"
+                      ></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="text-center mt-40">
+              <button
+                class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t"
+              >
+                <i class="fas mr-10 hidden text-regal-white"></i>Load More
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Works End -->
+
+      <!-- Section Fun Facts Start -->
+      <section id="facts">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Fun Facts
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-22">
+              <div
+                class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none"
+              >
+                <span class="text-regal-purple text-4xl icon-layers"></span>
+                <h3 class="text-3xl my-8">
+                  <em
+                    class="count font-Montserrat leading-9 font-bold not-italic"
+                    >2400</em
+                  >
+                </h3>
+                <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">
+                  Projects Completed
+                </p>
+              </div>
+
+              <div
+                class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none"
+              >
+                <span class="text-regal-purple text-4xl icon-cup"></span>
+                <h3 class="text-3xl my-8">
+                  <em
+                    class="count font-Montserrat leading-9 font-bold not-italic"
+                    >1300</em
+                  >
+                </h3>
+                <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">
+                  Cup of coffee
+                </p>
+              </div>
+
+              <div
+                class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none"
+              >
+                <span class="text-regal-purple text-4xl icon-clock"></span>
+                <h3 class="text-3xl my-8">
+                  <em
+                    class="count font-Montserrat leading-9 font-bold not-italic"
+                    >5700</em
+                  >
+                </h3>
+                <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">
+                  Hours worked
+                </p>
+              </div>
+
+              <div
+                class="py-30 px-15 border-1 border-solid border-regal-gr-w text-center rounded-none"
+              >
+                <span class="text-regal-purple text-4xl icon-trophy"></span>
+                <h3 class="text-3xl my-8">
+                  <em
+                    class="count font-Montserrat leading-9 font-bold not-italic"
+                    >640</em
+                  >
+                </h3>
+                <p class="text-15 font-Lato text-regal-grey-1 leading-22.5">
+                  Awards won
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Fun Facts End -->
+
+      <!-- Section Prices Start -->
+      <section id="prices">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Prices
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3">
+              <div
+                class="prices-item border-1 border-solid border-regal-gr-w py-40 px-30 lg:py-40 lg:px-70"
+              >
+                <span
+                  class="text-regal-white font-Montserrat text-sm font-bold inline-block bg-regal-purple py-3 px-10"
+                  >Regular</span
+                >
+                <h3
+                  class="text-5xl font-black font-Montserrat mt-30 mx-0 my-20"
+                >
+                  <em class="not-italic text-xl mr-10 align-super">$</em>14
+                </h3>
+                <ul class="list-none mb-0">
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Frontend Builder
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Regular Support
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    2 Years of Updates
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    White Labeling
+                  </li>
+                </ul>
+                <div class="mt-30">
+                  <button
+                    class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t"
+                  >
+                    purchase
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="prices-item border-1 border-solid border-regal-gr-w bg-regal-purple py-40 px-30 lg:py-40 lg:px-70"
+              >
+                <span
+                  class="text-regal-purple font-Montserrat text-sm font-bold inline-block bg-regal-white py-3 px-10"
+                  >Premium</span
+                >
+                <h3
+                  class="text-5xl text-regal-white font-black font-Montserrat mt-30 mx-0 my-20"
+                >
+                  <em
+                    class="not-italic text-regal-white text-xl mr-10 align-super"
+                    >$</em
+                  >29
+                </h3>
+                <ul class="list-none mb-0">
+                  <li
+                    class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Frontend Builder
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Regular Support
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    2 Years of Updates
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-white font-Lato before:content-[''] before:bg-regal-white before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    White Labeling
+                  </li>
+                </ul>
+                <div class="mt-30">
+                  <button
+                    class="btn btn-alt-light btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white bg-transparent border-3 border-solid border-regal-white hover:text-regal-purple hover:border-regal-white focus:text-regal-purple focus:border-regal-white before:bg-regal-white duration-0.3 shadow-001t"
+                  >
+                    purchase
+                  </button>
+                </div>
+              </div>
+
+              <div
+                class="prices-item border-1 border-solid border-regal-gr-w py-40 px-30 lg:py-40 lg:px-70"
+              >
+                <span
+                  class="text-regal-white font-Montserrat text-sm font-bold inline-block bg-regal-purple py-3 px-10"
+                  >Professional</span
+                >
+                <h3
+                  class="text-5xl font-black font-Montserrat mt-30 mx-0 my-20"
+                >
+                  <em class="not-italic text-xl mr-10 align-super">$</em>43
+                </h3>
+                <ul class="list-none mb-0">
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Frontend Builder
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    Regular Support
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    2 Years of Updates
+                  </li>
+                  <li
+                    class="leading-2.1 text-regal-grey-1 font-Lato before:content-[''] before:bg-regal-purple before:inline-block before:h-5 before:mr-20 before:align-middle before:w-5"
+                  >
+                    White Labeling
+                  </li>
+                </ul>
+                <div class="mt-30">
+                  <button
+                    class="btn btn-default btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white duration-0.3 shadow-001t"
+                  >
+                    purchase
+                  </button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Prices End -->
+
+      <!-- Section Testimonials Start -->
+      <section id="testimonials" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Testimonials
+            </h2>
+            <div class="nda-test-list">
+              <div class="text-center mx-auto sm:w-700">
+                <span
+                  class="text-100 font-Montserrat text-regal-purple leading-1"
+                  >“</span
+                >
+                <div
+                  class="rounded-50% overflow-hidden h-80 w-80 mx-auto mb-24"
+                >
+                  <img src="./build/img/test.jpg" alt="" />
+                </div>
+                <p
+                  class="italic font-Lato font-normal text-lg text-regal-grey-1"
+                >
+                  I enjoy working with the theme and learn so much. You guys
+                  make the process fun and interesting. Good luck!
+                </p>
+                <h4
+                  class="text-lg font-bold font-Montserrat leading-21.6 mt-24"
+                >
+                  John Doe
+                </h4>
+              </div>
+
+              <div class="text-center mx-auto sm:w-700">
+                <span
+                  class="text-100 font-Montserrat text-regal-purple leading-1"
+                  >“</span
+                >
+                <div
+                  class="rounded-50% overflow-hidden h-80 w-80 mx-auto mb-24"
+                >
+                  <img src="./build/img/test.jpg" alt="" />
+                </div>
+                <p
+                  class="italic font-Lato font-normal text-lg text-regal-grey-1"
+                >
+                  I enjoy working with the theme and learn so much. You guys
+                  make the process fun and interesting. Good luck!
+                </p>
+                <h4
+                  class="text-lg font-bold font-Montserrat leading-21.6 mt-24"
+                >
+                  John Doe
+                </h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Testimonials End -->
+
+      <!-- Section Blogs Start-->
+      <section id="blog" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <div class="blogs-info flex justify-between mb-100">
+              <h2 class="text-3xl font-black m-0 font-Montserrat uppercase">
+                Latest posts
+              </h2>
+              <a
+                href=""
+                class="text-sm font-Montserrat font-bold text-regal-black no-underline mt-8"
+                >VIEW ALL »</a
+              >
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-24">
+              <div class="blogs-item max-w-365 m-auto">
+                <div class="thumbnail relative overflow-hidden cursor-pointer">
+                  <a href=""
+                    ><span
+                      class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase"
+                      >Thoughts</span
+                    ></a
+                  >
+                  <img
+                    src="./build/img/blogs1.jpg"
+                    alt=""
+                    class="max-w-full h-auto object-center object-cover hover:scale-110"
+                  />
+                </div>
+                <h4
+                  class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple"
+                >
+                  I should be incapable of drawing a single stroke
+                </h4>
+                <ul
+                  class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer"
+                >
+                  <li
+                    class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5"
+                  >
+                    01 february 2019
+                  </li>
+                  <li
+                    class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple"
+                  >
+                    MUGIADMIN
+                  </li>
+                </ul>
+              </div>
+
+              <div class="blogs-item max-w-365 m-auto">
+                <div class="thumbnail relative overflow-hidden cursor-pointer">
+                  <a href=""
+                    ><span
+                      class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase"
+                      >Blog</span
+                    ></a
+                  >
+                  <img
+                    src="./build/img/blogs2.jpg"
+                    alt=""
+                    class="max-w-full h-auto object-center object-cover hover:scale-110"
+                  />
+                </div>
+                <h4
+                  class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple"
+                >
+                  While the lovely valley teems with vapour around me
+                </h4>
+                <ul
+                  class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer"
+                >
+                  <li
+                    class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5"
+                  >
+                    01 february 2019
+                  </li>
+                  <li
+                    class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple"
+                  >
+                    MUGIADMIN
+                  </li>
+                </ul>
+              </div>
+
+              <div class="blogs-item max-w-365 m-auto">
+                <div class="thumbnail relative overflow-hidden cursor-pointer">
+                  <a href=""
+                    ><span
+                      class="category absolute text-11 bg-regal-purple text-regal-white py-2 px-8 z-1 top-20 right-20 uppercase"
+                      >Tech</span
+                    ></a
+                  >
+                  <img
+                    src="./build/img/blogs3.jpg"
+                    alt=""
+                    class="max-w-full h-auto object-center object-cover hover:scale-110"
+                  />
+                </div>
+                <h4
+                  class="blogs-subtitle font-Montserrat cursor-pointer leading-21.6 font-bold text-lg mt-24 hover:text-regal-purple"
+                >
+                  I hear the buzz of the little world among the stalks
+                </h4>
+                <ul
+                  class="list-inline meta pl-0 list-none mb-0 mt-16 text-11 font-Lato text-regal-grey-1 uppercase tracking-0.77 cursor-pointer"
+                >
+                  <li
+                    class="list-inline-item icon-notes inline-block [&:not(:last-child)]:mr-16 after:content-[''] after:bg-regal-purple after:inline-block after:h-6 after:ml-16 after:align-middle after:w-5"
+                  >
+                    31 february 2019
+                  </li>
+                  <li
+                    class="list-inline-item icon-names inline-block text-regal-black hover:text-regal-purple"
+                  >
+                    MUGIADMIN
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Blogs End-->
+
+      <!-- Section Client Start -->
+      <section id="clients">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Clients
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-x-30">
+              <div
+                class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none"
+              >
+                <div class="absolute text-center w-full left-0">
+                  <img
+                    src="./build/img/client1.png"
+                    alt=""
+                    class="inline-block"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none"
+              >
+                <div class="absolute text-center w-full left-0">
+                  <img
+                    src="./build/img/client2.png"
+                    alt=""
+                    class="inline-block"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none"
+              >
+                <div class="absolute text-center w-full left-0">
+                  <img
+                    src="./build/img/client3.png"
+                    alt=""
+                    class="inline-block"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none"
+              >
+                <div class="absolute text-center w-full left-0">
+                  <img
+                    src="./build/img/client4.png"
+                    alt=""
+                    class="inline-block"
+                  />
+                </div>
+              </div>
+
+              <div
+                class="border-1 border-solid border-regal-gr-w p-25 min-h-80 relative rounded-none"
+              >
+                <div class="absolute text-center w-full left-0">
+                  <img
+                    src="./build/img/client2.png"
+                    alt=""
+                    class="inline-block"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Client End -->
+
+      <!-- Section Contact Start -->
+      <section id="contact" class="page-section">
+        <div class="w-full max-w-1080 px-15 mx-auto">
+          <div class="">
+            <h2
+              class="text-3xl font-black m-0 font-Montserrat uppercase mb-100"
+            >
+              Contact
+            </h2>
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-30">
+              <div class="text-center">
+                <span class="text-regal-purple text-4xl icon-phone"></span>
+                <h4
+                  class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14"
+                >
+                  Call us
+                </h4>
+                <p class="text-regal-grey-1 font-Lato text-base mb-60">
+                  +976 9886-4334
+                </p>
+              </div>
+
+              <div class="text-center">
+                <span
+                  class="text-regal-purple text-4xl icon-envelope-open"
+                ></span>
+                <h4
+                  class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14"
+                >
+                  Email us
+                </h4>
+                <p class="text-regal-grey-1 font-Lato text-base mb-60">
+                  hello@domain.website
+                </p>
+              </div>
+
+              <div class="text-center">
+                <span
+                  class="text-regal-purple text-4xl icon-location-pin"
+                ></span>
+                <h4
+                  class="text-lg font-bold font-Montserrat leading-18 mt-12 mb-14"
+                >
+                  Visit us
+                </h4>
+                <p class="text-regal-grey-1 font-Lato text-base mb-60">
+                  West Palm Beach, 4669 Travis Street
+                </p>
+              </div>
+            </div>
+            <form
+              id="contact-form"
+              class="contact-form"
+              method="post"
+              action=""
+              novalidate="true"
+            >
+              <div class="grid grid-cols-1 md:grid-cols-3 gap-30">
+                <div class="mb-30">
+                  <input
+                    type="text"
+                    class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple"
+                    name="InputName"
+                    id="InputName"
+                    placeholder="Your Name"
+                    required="required"
+                    data-error="Name is required"
+                  />
+                </div>
+
+                <div class="mb-30">
+                  <input
+                    type="text"
+                    class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple"
+                    name="InputName"
+                    id="InputName"
+                    placeholder="Email address"
+                    required="required"
+                    data-error="Name is required"
+                  />
+                </div>
+
+                <div class="mb-30">
+                  <input
+                    type="text"
+                    class="block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple"
+                    name="InputName"
+                    id="InputName"
+                    placeholder="Subject"
+                    required="required"
+                    data-error="Name is required"
+                  />
+                </div>
+              </div>
+
+              <div class="grid grid-cols-1">
+                <div class="mb-30">
+                  <textarea
+                    name="InputMessage"
+                    id="InputMessage"
+                    class="form-control block rounded-none w-full py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-white bg-none border-1 border-solid border-regal-gr-w shadow-none focus:outline-0 focus:border-regal-purple"
+                    rows="4"
+                    placeholder="Message"
+                    required="required"
+                    data-error="Message is required."
+                  ></textarea>
+                </div>
+              </div>
+            </form>
+            <div>
+              <button
+                type="submit"
+                id="submit"
+                value="submit"
+                class="btn btn-default btn-full btn-animation transition-colors inline-block align-middle relative before:content-[''] before:absolute before:-z-1 before:top-0 before:left-0 before:bottom-0 before:right-0 before:scale-y-0 before:origin-50-100 before:transition-transform before:duration-0.3 before:ease-out hover:before:scale-100 focus:before:scale-100 active:before:scale-100 rounded-none font-Montserrat text-14 font-black overflow-hidden leading-1 py-15 px-24 uppercase focus:shadow-none focus:outline-0 text-regal-white border-3 border-solid border-regal-purple bg-regal-purple hover:text-regal-purple hover:border-regal-purple focus:text-regal-purple focus:border-regal-purple before:bg-regal-white text-center w-full duration-0.3 shadow-001t"
+              >
+                Submit Message
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Section Contact End -->
     </main>
-    
-    <a id="return-to-top" class="fixed bottom-40 right-40 bg-regal-grey-1 w-40 h-40 no-underline rounded-none z-4 cursor-pointer hover:bg-regal-purple" style="display:block"><i class="fa fa-chevron-up text-regal-white m-0 relative left-12 top-8 text-base"></i></a>
+
+    <a
+      id="return-to-top"
+      class="fixed bottom-40 right-40 bg-regal-grey-1 w-40 h-40 no-underline rounded-none z-4 cursor-pointer hover:bg-regal-purple"
+      style="display: block"
+      ><i
+        class="fa fa-chevron-up text-regal-white m-0 relative left-12 top-8 text-base"
+      ></i
+    ></a>
     <!-- main layout end -->
 
     <!-- script start -->
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/waypoints/2.0.3/waypoints.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js"></script>
     <script src="./build/js/main.js"></script>
     <script src="./build/js/scroll.js"></script>
     <!-- script end -->
-
-</body>
+  </body>
 </html>
