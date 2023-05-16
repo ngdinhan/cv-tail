@@ -642,66 +642,20 @@
                 </div>        
             </div>          
         </section>
-
-        
         <!-- Section Contact End -->
-    </main> 
+    </main>
+    
+    <a id="return-to-top" class="fixed bottom-40 right-40 bg-regal-grey-1 w-40 h-40 no-underline rounded-none z-4 cursor-pointer hover:bg-regal-purple" style="display:block"><i class="fa fa-chevron-up text-regal-white m-0 relative left-12 top-8 text-base"></i></a>
     <!-- main layout end -->
 
-       <a id="return-to-top" class="fixed bottom-40 right-40 bg-regal-grey-1 w-40 h-40 no-underline rounded-none z-4 cursor-pointer hover:bg-regal-purple" style="display:block"><i class="fa fa-chevron-up text-regal-white m-0 relative left-12 top-8 text-base"></i></a>
-    
-        <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> 
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-        <script src="./build/js/main.js"></script>
-        <script src="./build/js/scroll.js"></script>
-        <script>
-            
-        $('.count').counterUp({
-            delay:10,
-            time:1000,   
-        });
+    <!-- script start -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js" integrity="sha512-CEiA+78TpP9KAIPzqBvxUv8hy41jyI3f2uHi7DGp/Y/Ka973qgSdybNegWFciqh6GrN2UePx2KkflnQUbUhNIA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Counter-Up/1.0.0/jquery.counterup.js" integrity="sha512-+/4Q+xH9jXbMNJzNt2eMrYv/Zs2rzr4Bu2thfvzlshZBvH1g+VGP55W8b6xfku0c0KknE7qlbBPhDPrHFbgK4g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="./build/js/main.js"></script>
+    <script src="./build/js/scroll.js"></script>
+    <!-- script end -->
 
-        $('.menu-icon button').on( 'click', function() {
-            $('header.desktop-header, .main-layout, header.mobile-header').toggleClass('open');
-        });
-
-        $('main.main-layout').on( 'click', function() {
-            $('header.desktop-header, .main-layout, header.mobile-header').removeClass('open');
-        });
-
-        $('.vertical-menu li a').on( 'click', function() {
-            $('header.desktop-header, .main-layout, header.mobile-header').removeClass('open');
-        });
-
-        $('.search-button').on( 'click', function() {
-            $('.search-popup').addClass('open');
-        });
-
-        $('.search-popup .close').on( 'click', function() {
-            $('.search-popup').removeClass('open');
-        });
-
-        $( ".reply-title" ).prependTo( ".comment-respond" );
-
-        $(window).scroll(function() {
-        if ($(this).scrollTop() >= 500) {        
-              $('.progress-bar').toggleClass('coding');
-              $('.progress-bar.addWordpress').toggleClass('wordpress');
-              $('.progress-bar.addSketch').toggleClass('sketch');
-              $('.progress-bar.addJquery').toggleClass('jQuery');  
-        } 
-        });
-        
-        $(window).scroll(function() {
-            if ($(this).scrollTop() >= 350) {        
-                $("#return-to-top").css("display", "block");  
-            } else {
-                $("#return-to-top").css("display", "none");
-            }
-        });
-        </script>
-    
 </body>
 </html>
