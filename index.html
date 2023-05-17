@@ -29,6 +29,42 @@
   </head>
 
   <body class="bg-regal-white text-base overflow-x-hidden">
+
+    <!-- preloader start -->
+    <div class="" id="preloader">
+      
+    </div>
+    <!-- preloader end -->
+
+    <!-- search-popup start -->
+    <div class="search-popup bg-regal-white h-screen fixed top-0 w-full z-2">
+      <button type="button" class="close float-right text-2xl font-bold leading-1 text-regal-black opacity-0.5" aria-label="Close">
+        <span aria-hidden="true">x</span>
+      </button>
+      <form
+        class="form-inline search-form flex items-center absolute left-1/2 top-1/2 mb-48"
+        role="search"
+        method="get"
+        id="searchform"
+        action=""
+      >
+        <input
+          class="form-control block rounded-none w-full h-50 py-10 px-30 text-base font-light leading-1.6 text-regal-black-0 bg-regal-white bg-none border-1 border-solid border-regal-gr-w shadow-none"
+          type="text"
+          aria-label="Search"
+          name="s"
+          id="search-full"
+          placeholder="Search..."
+          value=""
+          required=""
+        />
+        <button class="search h-50 w-50 bg-regal-purple text-regal-white border-0" type="submit">
+          <i class="fas fa-search"></i>
+        </button>
+      </form>
+    </div>
+    <!-- search-popup end -->
+
     <!-- mobile header start -->
     <header
       class="mobile-header bg-regal-white border-1 border-solid border-regal-gr-w py-10 px-0 block lg:hidden"
@@ -412,7 +448,7 @@
               Experience
             </h2>
             <div class="grid grid-cols-1 md:grid-cols-2 gap-x-30">
-              <div class="relative md:h-690 lg:h-620">
+              <div class="relative">
                 <div
                   class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
                 >
@@ -472,7 +508,7 @@
                 ></span>
               </div>
 
-              <div class="relative md:h-690 lg:h-620">
+              <div class="relative">
                 <div
                   class="relative pl-50 mb-100 w-full bg-inherit after:content-[''] after:absolute after:w-9 after:h-9 after:left-0 after:bg-regal-purple after:top-7 after:z-1"
                 >

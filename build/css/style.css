@@ -554,6 +554,10 @@ video {
   left: 0px;
 }
 
+.left-1\/2 {
+  left: 50%;
+}
+
 .left-12 {
   left: 12px;
 }
@@ -586,6 +590,10 @@ video {
   top: 0px;
 }
 
+.top-1\/2 {
+  top: 50%;
+}
+
 .top-20 {
   top: 20px;
 }
@@ -602,8 +610,16 @@ video {
   z-index: 1;
 }
 
+.z-2 {
+  z-index: 2;
+}
+
 .z-4 {
   z-index: 4;
+}
+
+.float-right {
+  float: right;
 }
 
 .float-left {
@@ -676,6 +692,10 @@ video {
 
 .mb-40 {
   margin-bottom: 40px;
+}
+
+.mb-48 {
+  margin-bottom: 48px;
 }
 
 .mb-50 {
@@ -814,6 +834,10 @@ video {
   height: 5px;
 }
 
+.h-50 {
+  height: 50px;
+}
+
 .h-60 {
   height: 60px;
 }
@@ -828,6 +852,10 @@ video {
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
 }
 
 .max-h-50 {
@@ -868,6 +896,10 @@ video {
 
 .w-5 {
   width: 5px;
+}
+
+.w-50 {
+  width: 50px;
 }
 
 .w-60 {
@@ -1031,6 +1063,10 @@ video {
   border-width: 3px;
 }
 
+.border {
+  border-width: 1px;
+}
+
 .border-r-1 {
   border-right-width: 1px;
 }
@@ -1041,6 +1077,10 @@ video {
 
 .border-solid {
   border-style: solid;
+}
+
+.border-none {
+  border-style: none;
 }
 
 .border-regal-black {
@@ -1436,6 +1476,10 @@ video {
   opacity: 0;
 }
 
+.opacity-0\.5 {
+  opacity: 0.5;
+}
+
 .opacity-0\.9 {
   opacity: 0.9;
 }
@@ -1482,6 +1526,67 @@ section {
   padding-bottom: 100px;
   position: relative;
 }
+
+/* search-popup start */
+
+.search-popup{
+  transition: all 0.7s ease-in-out;
+  transform: translateY(150%);
+  -webkit-transition: all 0.7s ease-in-out;
+  -moz-transition: all 0.7s ease-in-out;
+  -webkit-transform: translateY(150%);
+  -moz-transform: translateY(150%);
+  -ms-transform: translateY(150%);
+  -o-transform: translateY(150%);
+}
+
+.search-popup.open{
+  transform: translateY(0);
+  -webkit-transform: translateY(0);
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -o-transform: translateY(0);
+}
+
+.close{
+  text-shadow:0 1px 0 #fff;
+}
+
+/* button.close{
+        padding:0;
+        background-color: transparent;
+        border:0;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+    } */
+
+button.close{
+  font-size:2.5rem;
+  margin-top:30px;
+  margin-right:30px;
+  font-weight:400;
+}
+
+.close:not(:disabled):not(.disable){
+  cursor:pointer;
+}
+
+.form-inline{
+  flex-flow: row wrap;
+  display: -ms-flexbox;
+  -ms-flex-align: center;
+}
+
+.search-form{
+  transform: translate(-50%, -50%);
+}
+
+.form-control{
+  -webkit-box-shadow: none;
+}
+
+/* search-popup end */
 
 /* menu desktop header start */
 
@@ -1730,7 +1835,7 @@ header.desktop-header .vertical-menu li a:after {
 
 /* button end */
 
-/* custom button start */
+/* custom button and responsive start */
 
 header.mobile-header{
   border-bottom: 1px solid #ececec;
@@ -1755,21 +1860,11 @@ main.content {
   transform: translateX(240px);
 }
 
-@media only screen and (max-width: 991px){
-  header.mobile-header {
-    display: block;
-  }
-
-  header.desktop-header {
-    transform: translateX(-240px);
-  }
-
-  header.desktop-header.open {
-    transform: translateX(0);
-  }
-
-  .main-layout {
-    margin-left: 0;
+@media (min-width:576px){
+  .form-inline .form-control{
+    display: inline-block;
+    width:auto;
+    vertical-align: middle;
   }
 }
 
@@ -1789,13 +1884,31 @@ main.content {
   }
 }
 
+@media only screen and (max-width: 991px){
+  header.mobile-header {
+    display: block;
+  }
+
+  header.desktop-header {
+    transform: translateX(-240px);
+  }
+
+  header.desktop-header.open {
+    transform: translateX(0);
+  }
+
+  .main-layout {
+    margin-left: 0;
+  }
+}
+
 @media (min-width:1200px){
   .nda-container{
     max-width:920px;
   }
 }
 
-/* custom button end */
+/* custom button and responsive end */
 
 .before\:absolute::before {
   content: var(--tw-content);
@@ -2170,16 +2283,8 @@ main.content {
     display: none;
   }
 
-  .md\:h-620 {
-    height: 620px;
-  }
-
   .md\:h-screen {
     height: 100vh;
-  }
-
-  .md\:h-690 {
-    height: 690px;
   }
 
   .md\:min-h-screen {
@@ -2236,10 +2341,6 @@ main.content {
 
   .lg\:hidden {
     display: none;
-  }
-
-  .lg\:h-620 {
-    height: 620px;
   }
 
   .lg\:max-w-1080 {
