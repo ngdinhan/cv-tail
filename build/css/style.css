@@ -766,6 +766,10 @@ video {
   margin-top: auto;
 }
 
+.mb-62 {
+  margin-bottom: 62px;
+}
+
 .block {
   display: block;
 }
@@ -1253,10 +1257,6 @@ video {
 
 .text-14 {
   font-size: 14px;
-}
-
-.text-15 {
-  font-size: 15px;
 }
 
 .text-2xl {
@@ -2156,6 +2156,10 @@ main.content {
 }
 
 @media (min-width: 768px) {
+  .md\:mb-60 {
+    margin-bottom: 60px;
+  }
+
   .md\:block {
     display: block;
   }
