@@ -69,9 +69,9 @@ $(window).scroll(function() {
 // return to top end
 
 // counter up number start
-    $('.count').counterUp({
-        delay:10,
-        time:1000,    
-    });
+$('.count').counterUp({
+    delay:10,
+    time:1000,    
+});
 // counter up number end 
 

@@ -534,6 +534,10 @@ video {
   position: relative;
 }
 
+.-left-10 {
+  left: -10px;
+}
+
 .bottom-0 {
   bottom: 0px;
 }
@@ -690,10 +694,6 @@ video {
   margin-left: 0px;
 }
 
-.ml-auto {
-  margin-left: auto;
-}
-
 .mr-10 {
   margin-right: 10px;
 }
@@ -716,10 +716,6 @@ video {
 
 .mr-25 {
   margin-right: 25px;
-}
-
-.mr-auto {
-  margin-right: auto;
 }
 
 .mt-0 {
@@ -1211,20 +1207,12 @@ video {
   padding-left: 0px;
 }
 
-.pl-15 {
-  padding-left: 15px;
-}
-
 .pl-40 {
   padding-left: 40px;
 }
 
 .pl-50 {
   padding-left: 50px;
-}
-
-.pr-15 {
-  padding-right: 15px;
 }
 
 .pr-30 {
@@ -1799,6 +1787,12 @@ main.content {
   }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  .nda-container{
+    max-width: 720px;
+  }
+}
+
 /* custom button end */
 
 .before\:absolute::before {
@@ -2156,10 +2150,6 @@ main.content {
 }
 
 @media (min-width: 640px) {
-  .sm\:w-700 {
-    width: 700px;
-  }
-
   .sm\:grid-cols-2 {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -2180,6 +2170,10 @@ main.content {
 
   .md\:min-h-screen {
     min-height: 100vh;
+  }
+
+  .md\:w-700 {
+    width: 700px;
   }
 
   .md\:max-w-280 {
